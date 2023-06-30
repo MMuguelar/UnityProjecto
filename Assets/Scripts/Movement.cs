@@ -68,6 +68,13 @@ public class Movement : MonoBehaviour
 
         // Animaciones
         float movementSpeed = movement.magnitude;
-        anim.SetFloat("Speed", movementSpeed);
+        if(Input.GetMouseButtonDown(1))
+        {
+            anim.SetBool("IsRunW",true);
+        }
+         if(Input.GetMouseButtonUp(1))
+        {
+            anim.SetBool("IsRunW",false);
+        }
     }
 }
