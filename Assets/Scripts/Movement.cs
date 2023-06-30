@@ -20,7 +20,7 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
-       float hor = Input.GetAxisRaw("Horizontal");
+        float hor = Input.GetAxisRaw("Horizontal");
         float ver = Input.GetAxisRaw("Vertical"); 
 
         // Movimiento del personaje con las teclas de flecha
@@ -68,6 +68,13 @@ public class Movement : MonoBehaviour
 
         // Animaciones
         float movementSpeed = movement.magnitude;
-        anim.SetFloat("Speed", movementSpeed);
+        if(Input.GetMouseButtonDown(1))
+        {
+            anim.SetBool("IsRunW",true);
+        }
+         if(Input.GetMouseButtonUp(1))
+        {
+            anim.SetBool("IsRunW",false);
+        }
     }
 }
