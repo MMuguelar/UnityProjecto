@@ -25,9 +25,7 @@ public class MovmentDash : MonoBehaviour {
      // Update is called once per frame
      void Update () {
         if(_jugador.DashActivo == true){
-            UseDash();
-           
-        
+            UseDash(); 
         }
       
      }

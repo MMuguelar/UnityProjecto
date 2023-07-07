@@ -16,13 +16,12 @@ public class UnblockDash : MonoBehaviour
     {
         
     }
-private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter(Collision collision)
     {
-         if (collision.gameObject.CompareTag("Jugador"))
+        if (collision.gameObject.CompareTag("Jugador"))
         {
-
-             DashActivo = true;
-             Destroy(gameObject);
+            DashActivo = true;
+            Destroy(gameObject);
         }
     }
 }

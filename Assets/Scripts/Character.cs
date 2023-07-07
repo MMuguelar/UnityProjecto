@@ -1,41 +1,34 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.AI;
-using UnityEngine.UI;
 
-public class Jugador : MonoBehaviour//Character
-{
-    private float maxLife = 20f;
+public class Character : MonoBehaviour
+{   
+    public float maxLife;
     public float life { get; private set; }
     public float contactDamage = 3.5f;
     private float damageCooldown = 0.5f;
     private float damageTimer = 0.0f;
-    private Slider barraVida;
-    private Enemy enemy;
-    
+    public Enemy enemy;
+    public Jugador player;
+
     void Awake()
     {
         life = maxLife;
     }
-
-    void Update()
-    {
-        //Debug.Log("Cooldown: " + damageTimer);
-        //Debug.Log("El enemigo tiene: " + enemy.life + " de vida");
-        //Debug.Log("El jugador tiene: " + life + " de vida");
-        if (damageCooldown > 0)
-        {
-            damageCooldown -= Time.deltaTime;
-        }
-    }
-
+    
     private void OnCollisionEnter(Collision collision)
     {
-        
+
+        if(collision.gameObject.CompareTag("Player"))
+        {
+            player = collision.gameObject.GetComponent<Jugador>();
+            /*enemy*/TakeDamage(player.contactDamage);
+            /*player*/player.TakeDamage(contactDamage);
+        }
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            Enemy enemy = collision.gameObject.GetComponent<Enemy>();
+            enemy = collision.gameObject.GetComponent<Enemy>();
             /*player*/TakeDamage(enemy.contactDamage);
             /*enemy*/enemy.TakeDamage(contactDamage);
         }
