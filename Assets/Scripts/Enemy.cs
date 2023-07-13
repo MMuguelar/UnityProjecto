@@ -24,11 +24,11 @@ public class Enemy : MonoBehaviour //Character
 
     void Update()
     {
-        bool estarAlerta = Physics.CheckSphere(transform.position, rangoDeAlerta, capaDelJugador);
-        if (estarAlerta) 
+        //bool estarAlerta = Physics.CheckSphere(transform.position, rangoDeAlerta, capaDelJugador);
+        /*if (estarAlerta) 
         {
-            agente.SetDestination(player.transform.position);
-        }
+            //agente.SetDestination(player.transform.position);
+        }*/
         if (damageCooldown > 0)
         {
             damageCooldown -= Time.deltaTime;

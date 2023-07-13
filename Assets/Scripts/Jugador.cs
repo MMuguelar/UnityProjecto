@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.AI;
+//using UnityEngine.AI;
 using UnityEngine.UI;
 
 public class Jugador : MonoBehaviour//Character
@@ -11,7 +11,7 @@ public class Jugador : MonoBehaviour//Character
     public float contactDamage = 3.5f;
     private float damageCooldown = 0.5f;
     private float damageTimer = 0.0f;
-    private Slider barraVida;
+    public Slider barraVida;
     private Enemy enemy;
     
     void Awake()
@@ -21,6 +21,7 @@ public class Jugador : MonoBehaviour//Character
 
     void Update()
     {
+        Debug.Log("vida jugador:" + barraVida.value);
         //Debug.Log("Cooldown: " + damageTimer);
         //Debug.Log("El enemigo tiene: " + enemy.life + " de vida");
         //Debug.Log("El jugador tiene: " + life + " de vida");
@@ -35,9 +36,17 @@ public class Jugador : MonoBehaviour//Character
         
         if (collision.gameObject.CompareTag("Enemy"))
         {
+            Debug.Log("gola");
             Enemy enemy = collision.gameObject.GetComponent<Enemy>();
-            /*player*/TakeDamage(enemy.contactDamage);
-            /*enemy*/enemy.TakeDamage(contactDamage);
+            if (enemy != null)
+            {
+                /*player*/TakeDamage(enemy.contactDamage);
+                /*enemy*/enemy.TakeDamage(contactDamage);
+            }
+            else
+            {
+                Debug.LogWarning("No se encontró el componente Enemy en el objeto de colisión.");
+            }
         }
     }
 
@@ -46,6 +55,8 @@ public class Jugador : MonoBehaviour//Character
         if (damageTimer <= 0)
         {
             life -= damage;
+            Debug.Log(life);
+            barraVida.value = life; 
 
             if (life <= 0)
             {
