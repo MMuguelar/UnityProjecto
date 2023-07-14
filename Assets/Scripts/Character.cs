@@ -1,37 +1,35 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Character : MonoBehaviour
-{   
-    public float maxLife;
-    public float life { get; private set; }
-    public float contactDamage = 3.5f;
-    private float damageCooldown = 0.5f;
-    private float damageTimer = 0.0f;
-    public Enemy enemy;
-    public Jugador player;
+{
+    protected float maxLife;
+    public float life { get; protected set; }
+    public float contactDamage;
+    protected float damageCooldown;
+    protected float damageTimer;
+    public Slider healthSlider;
 
-    void Awake()
+    protected virtual void Awake()
     {
         life = maxLife;
     }
-    
-    private void OnCollisionEnter(Collision collision)
-    {
 
-        if(collision.gameObject.CompareTag("Player"))
+    protected virtual void Update()
+    {
+        healthSlider.value = life;
+
+        if (damageTimer > 0)
         {
-            player = collision.gameObject.GetComponent<Jugador>();
-            /*enemy*/TakeDamage(player.contactDamage);
-            /*player*/player.TakeDamage(contactDamage);
+            damageTimer -= Time.deltaTime;
         }
-        if (collision.gameObject.CompareTag("Enemy"))
-        {
-            enemy = collision.gameObject.GetComponent<Enemy>();
-            /*player*/TakeDamage(enemy.contactDamage);
-            /*enemy*/enemy.TakeDamage(contactDamage);
-        }
+    }
+
+    protected virtual void OnCollisionEnter(Collision collision)
+    {
+        // Implement collision logic in derived classes (Jugador, Enemy)
     }
 
     public void TakeDamage(float damage)
@@ -39,15 +37,14 @@ public class Character : MonoBehaviour
         if (damageTimer <= 0)
         {
             life -= damage;
+            Debug.Log("Vida restante: " + life);
 
             if (life <= 0)
             {
-                // Eliminar el enemigo si la vida llega a 0
                 Destroy(gameObject);
             }
 
             damageTimer = damageCooldown;
         }
-        
     }
 }

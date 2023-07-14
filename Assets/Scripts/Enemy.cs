@@ -2,63 +2,48 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UI;
 
-public class Enemy : MonoBehaviour //Character
+public class Enemy : Character
 {
     NavMeshAgent agente;
-    private float maxLife = 5f;
-    public float life { get; private set; }
-    public float contactDamage = 2f;
-    private float damageCooldown = 0.5f;
-    private float damageTimer = 0.0f;
     private float rangoDeAlerta = 10f;
     public LayerMask capaDelJugador;
     private Jugador player;
 
-    void Awake()
+    protected override void Awake()
     {
+        maxLife = 15f;
+        contactDamage = 2f;
+        base.Awake();
         agente = GetComponent<NavMeshAgent>();
-        life = maxLife;
-
     }
 
-    void Update()
+    protected override void Update()
     {
+        healthSlider.value = life;
         //bool estarAlerta = Physics.CheckSphere(transform.position, rangoDeAlerta, capaDelJugador);
         /*if (estarAlerta) 
         {
             //agente.SetDestination(player.transform.position);
         }*/
-        if (damageCooldown > 0)
-        {
-            damageCooldown -= Time.deltaTime;
-        }
+        base.Update();
     }
 
-    private void OnCollisionEnter(Collision collision)
+    protected override void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Jugador"))
+        if (collision.gameObject.CompareTag("Player"))
         {
-            Jugador jugador = collision.gameObject.GetComponent<Jugador>();
-            TakeDamage(jugador.contactDamage);
-            jugador.TakeDamage(contactDamage);
-        }
-    }
-
-    public void TakeDamage(float damage)
-    {
-        if (damageTimer <= 0)
-        {
-            life -= damage;
-
-            if (life <= 0)
+            Jugador player = collision.gameObject.GetComponent<Jugador>();
+            if (player != null)
             {
-                // Eliminar el enemigo si la vida llega a 0
-                Destroy(gameObject);
+                TakeDamage(player.contactDamage);
+                player.TakeDamage(contactDamage);
             }
-
-            damageTimer = damageCooldown;
+            else
+            {
+                Debug.LogWarning("No se encontró el componente Enemy en el objeto de colisión.");
+            }
         }
-        
     }
 }

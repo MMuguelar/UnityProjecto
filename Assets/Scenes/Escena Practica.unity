@@ -406,7 +406,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   contactDamage: 3.5
-  barraVida: {fileID: 2133899935}
+  healthSlider: {fileID: 2133899935}
 --- !u!114 &321404357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2328,6 +2328,7 @@ MonoBehaviour:
   capaDelJugador:
     serializedVersion: 2
     m_Bits: 8
+  barraVida: {fileID: 0}
 --- !u!1 &2133899933
 GameObject:
   m_ObjectHideFlags: 0

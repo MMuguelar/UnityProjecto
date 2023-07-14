@@ -7,12 +7,18 @@ using UnityEngine.SceneManagement;
 public class InteraccionLaberinto : MonoBehaviour
 {
     public int numeroEscena;
-    public GameObject Texto;
-    private bool zona;
-
+    //public GameObject Texto;
+    private bool zona = false;
+    private bool player1 = false;   
+    private bool player2 = false;
+    
     private void Update() {
 
-        if (Input.GetKeyDown(KeyCode.E) && zona == true)
+        if(player1 == true & player2 == true)
+        {
+            zona = true;
+        }
+        if (zona == true)
         {
             SceneManager.LoadScene(numeroEscena);
         } 
@@ -20,20 +26,31 @@ public class InteraccionLaberinto : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Player")
+        switch (other.tag)
         {
-            Debug.Log("entre");
-            Texto.SetActive(true);
-            zona = true;
+            case "Player":
+                player1 = true;
+                Debug.Log("Entro Player");
+            break;
+            case "Enemy":
+                player2 = true;
+                Debug.Log("Entro Enemy");
+            break;
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if(other.tag == "Player")
+        switch(other.tag)
         {
-            Texto.SetActive(false);
-            zona = false;
+            case "Player":
+                player1 = false;
+                Debug.Log("Salió Player");
+            break;
+            case "Enemy":
+                player2 = false;
+                Debug.Log("Salió Enemy");
+            break;
         }
     }
 }
