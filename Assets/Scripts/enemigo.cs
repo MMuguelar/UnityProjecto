@@ -9,10 +9,14 @@ public class enemigo : MonoBehaviour
     public float cronometro;
     public Animator anim;   
     public Quaternion angulo;
+    public GameObject target;
+    public bool atacando;
     // Start is called before the first frame update
     void Start()
     {
          anim = GetComponent<Animator>();
+         target = GameObject.Find("personajeAnimaciones@Running (1)");
+
     }
 
     // Update is called once per frame
@@ -22,6 +26,9 @@ public class enemigo : MonoBehaviour
     }
     public void Comportamiento_Enemigo()
     {
+        anim.SetBool("run",false);
+        if (Vector3.Distance(transform.position, target.transform.position)>20 )
+        {
         cronometro += 1 * Time.deltaTime;
         if (cronometro >=4)
         {
@@ -46,5 +53,29 @@ public class enemigo : MonoBehaviour
             break;
         }
     }
+    else{
+        if(Vector3.Distance(transform.position, target.transform.position)>1 && !atacando ){
+        var lookPos = target.transform.position - transform.position;
+        lookPos.y = 0;
+        var rotation = Quaternion.LookRotation(lookPos);
+        transform.rotation = Quaternion.RotateTowards(transform.rotation, rotation, 3);
+        anim.SetBool("walk", false);
+        anim.SetBool("run",true );
+        transform.Translate(Vector3.forward*2*Time.deltaTime);
+        anim.SetBool("run",false);
+    }
+    else{
+  anim.SetBool("walk", false);
+        anim.SetBool("run",false );
+    anim.SetBool("attack",true );
+    atacando = true;
+    }
+    }
 
+}
+public void Final_ani()
+{
+    anim.SetBool("attack",false);
+    atacando= false;
+}
 }
