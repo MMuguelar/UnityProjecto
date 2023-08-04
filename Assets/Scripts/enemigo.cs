@@ -11,6 +11,8 @@ public class enemigo : MonoBehaviour
     public Quaternion angulo;
     public GameObject target;
     public bool atacando;
+    public float velocidad = 1.0f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +25,7 @@ public class enemigo : MonoBehaviour
     void Update()
     {
        Comportamiento_Enemigo();
+      
     }
     public void Comportamiento_Enemigo()
     {
@@ -38,7 +41,8 @@ public class enemigo : MonoBehaviour
         switch(rutina){
             case 0:
             anim.SetBool("walk",false);
-           
+            Final_ani();
+            
             break;
             case 1:
            int grado = Random.Range(0,160);
@@ -48,8 +52,9 @@ public class enemigo : MonoBehaviour
             break;
             case 2:     
             transform.rotation = Quaternion.RotateTowards(transform.rotation, angulo, 0.5f);
-            transform.Translate(Vector3.forward * 1 * Time.deltaTime);
+            transform.Translate(Vector3.forward * velocidad * Time.deltaTime);
             anim.SetBool("walk",true);
+            velocidad = 1.0f;
             break;
         }
     }
@@ -61,15 +66,20 @@ public class enemigo : MonoBehaviour
         transform.rotation = Quaternion.RotateTowards(transform.rotation, rotation, 3);
         anim.SetBool("walk", false);
         anim.SetBool("run",true );
-        transform.Translate(Vector3.forward*2*Time.deltaTime);
-        anim.SetBool("run",false);
+        velocidad = 3.0f;
+     transform.Translate(Vector3.forward * velocidad * 2 * Time.deltaTime);
+
+
+      
     }
     else{
   anim.SetBool("walk", false);
         anim.SetBool("run",false );
     anim.SetBool("attack",true );
     atacando = true;
+   
     }
+   Final_ani();
     }
 
 }
