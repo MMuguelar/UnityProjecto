@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class enemigo : MonoBehaviour
+using UnityEngine.AI;
+using UnityEngine.UI;
+public class enemigo : Character
 {
 
     public int rutina;
@@ -25,7 +26,7 @@ public class enemigo : MonoBehaviour
     void Update()
     {
        Comportamiento_Enemigo();
-      
+       base.Awake();
     }
     public void Comportamiento_Enemigo()
     {
@@ -79,7 +80,6 @@ public class enemigo : MonoBehaviour
     atacando = true;
    
     }
-   Final_ani();
     }
 
 }
