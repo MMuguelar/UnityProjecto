@@ -18,13 +18,14 @@ public class enemigo : Character
     void Start()
     {
          anim = GetComponent<Animator>();
-         target = GameObject.Find("personajeAnimaciones@Running (1)");
+         target = GameObject.Find("personajeAnimaciones@Running (1) Variant");
 
     }
 
     // Update is called once per frame
     void Update()
     {
+    
        Comportamiento_Enemigo();
        base.Awake();
     }
@@ -33,59 +34,64 @@ public class enemigo : Character
         anim.SetBool("run",false);
         if (Vector3.Distance(transform.position, target.transform.position)>20 )
         {
-        cronometro += 1 * Time.deltaTime;
-        if (cronometro >=4)
+            cronometro += 1 * Time.deltaTime;
+            if (cronometro >=4)
+            {
+                rutina = Random.Range(0,2);
+                cronometro = 0;
+            }
+            switch(rutina){
+                case 0:
+                anim.SetBool("walk",false);
+                Final_ani();
+                
+                break;
+                case 1:
+            int grado = Random.Range(0,160);
+                angulo= Quaternion.Euler(0, grado ,0);
+                rutina++;
+
+                break;
+                case 2:     
+                transform.rotation = Quaternion.RotateTowards(transform.rotation, angulo, 0.5f);
+                transform.Translate(Vector3.forward * velocidad * Time.deltaTime);
+                anim.SetBool("walk",true);
+                velocidad = 1.0f;
+                break;
+            }
+            if(Vector3.Distance(transform.position, target.transform.position)>8 && !atacando )
+            {
+                var lookPos = target.transform.position - transform.position;
+                lookPos.y = 0;
+                var rotation = Quaternion.LookRotation(lookPos);
+                transform.rotation = Quaternion.RotateTowards(transform.rotation, rotation, 3);
+                anim.SetBool("walk", false);
+                anim.SetBool("run",true );
+                velocidad = 3.0f;
+                transform.Translate(Vector3.forward * velocidad * 2 * Time.deltaTime);
+            }
+            else{
+                anim.SetBool("walk", false);
+                anim.SetBool("run",false );
+                anim.SetBool("attack",true );
+                atacando = true;
+                cronometro = 0;
+            }
+        }
+        
+    }
+    public void Final_ani()
+    {
+        anim.SetBool("attack",false);
+        atacando= false;
+    }
+    protected override void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log("hola");
+        
+        if (collision.gameObject.CompareTag("Player"))
         {
-            rutina = Random.Range(0,2);
-            cronometro = 0;
-        }
-        switch(rutina){
-            case 0:
-            anim.SetBool("walk",false);
-            Final_ani();
-            
-            break;
-            case 1:
-           int grado = Random.Range(0,160);
-            angulo= Quaternion.Euler(0, grado ,0);
-            rutina++;
 
-            break;
-            case 2:     
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, angulo, 0.5f);
-            transform.Translate(Vector3.forward * velocidad * Time.deltaTime);
-            anim.SetBool("walk",true);
-            velocidad = 1.0f;
-            break;
         }
     }
-    else{
-        if(Vector3.Distance(transform.position, target.transform.position)>1 && !atacando ){
-        var lookPos = target.transform.position - transform.position;
-        lookPos.y = 0;
-        var rotation = Quaternion.LookRotation(lookPos);
-        transform.rotation = Quaternion.RotateTowards(transform.rotation, rotation, 3);
-        anim.SetBool("walk", false);
-        anim.SetBool("run",true );
-        velocidad = 3.0f;
-     transform.Translate(Vector3.forward * velocidad * 2 * Time.deltaTime);
-
-
-      
-    }
-    else{
-  anim.SetBool("walk", false);
-        anim.SetBool("run",false );
-    anim.SetBool("attack",true );
-    atacando = true;
-   
-    }
-    }
-
-}
-public void Final_ani()
-{
-    anim.SetBool("attack",false);
-    atacando= false;
-}
 }

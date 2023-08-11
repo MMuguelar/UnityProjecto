@@ -21,7 +21,7 @@ public class Movement : MonoBehaviour
     void Update()
     {
         float hor = Input.GetAxisRaw("Horizontal");
-        float ver = Input.GetAxisRaw("Vertical"); 
+        float ver = Input.GetAxisRaw("Vertical");
 
         // Movimiento del personaje con las teclas de flecha
         movement = new Vector3(hor, 0f, ver);
