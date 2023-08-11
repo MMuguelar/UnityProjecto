@@ -5,7 +5,7 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     private CharacterController characterController;
-    //private Animator anim;
+    private Animator anim;
     public float speed = 4f;
     public float rotationSpeed = 500f;
     public float gravity = -9.8f;
@@ -15,7 +15,7 @@ public class Movement : MonoBehaviour
     void Start()
     {
         characterController = GetComponent<CharacterController>();
-        //anim = GetComponent<Animator>();
+        anim = GetComponent<Animator>();
     }
 
     void Update()
@@ -68,13 +68,13 @@ public class Movement : MonoBehaviour
 
         // Animaciones
         float movementSpeed = movement.magnitude;
-        /*if(Input.GetMouseButtonDown(1))
+        if(Input.GetMouseButtonDown(1))
         {
             anim.SetBool("IsRunW",true);
         }
          if(Input.GetMouseButtonUp(1))
         {
             anim.SetBool("IsRunW",false);
-        }*/
+        }
     }
 }
