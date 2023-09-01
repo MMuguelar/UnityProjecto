@@ -24,12 +24,13 @@ public class Movement : MonoBehaviour
         float ver = Input.GetAxisRaw("Vertical");
 
         // Movimiento del personaje con las teclas de flecha
-        movement = new Vector3(hor, 0f, ver);
+      //  movement = new Vector3(hor, 0f, ver);
         movement.Normalize();
 
         if (Input.GetMouseButtonDown(1))
         {
             isMovingToMouse = true;
+        
         }
 
         if (Input.GetMouseButtonUp(1))
@@ -58,6 +59,7 @@ public class Movement : MonoBehaviour
 
             // Mover al personaje hacia adelante
             movement = transform.forward;
+           
         }
 
         // Gravedad

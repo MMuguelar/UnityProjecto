@@ -32,5 +32,4 @@ public class CameraController : MonoBehaviour
         // Ajusta la rotación de la cámara para que mire hacia el jugador
         transform.LookAt(jugador.position);
     }
-
 }
