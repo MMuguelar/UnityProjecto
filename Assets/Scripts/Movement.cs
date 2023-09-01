@@ -24,7 +24,6 @@ public class Movement : MonoBehaviour
         float ver = Input.GetAxisRaw("Vertical");
 
         // Movimiento del personaje con las teclas de flecha
-      //  movement = new Vector3(hor, 0f, ver);
         movement.Normalize();
 
         if (Input.GetMouseButtonDown(1))
