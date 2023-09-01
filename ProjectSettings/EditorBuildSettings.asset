@@ -5,13 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/menu.unity
     guid: 470713c94f36e9049ad8fde9f9579b05
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Escena Practica.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/PuzzleDash.unity
     guid: b3be96deb824c644da619e4de8494281
   - enabled: 1

@@ -26,7 +26,8 @@ public class CameraController : MonoBehaviour
         }
 
         // Ajusta la posición de la cámara
-        Vector3 offset = new Vector3(0, 24, -12); // Ajusta estos valores para cambiar la posición relativa de la cámara
+        Vector3 offset = new Vector3(0, 100, -12); // Ajusta estos valores para cambiar la posición relativa de la cámara
+        
         transform.position = jugador.position + offset;
 
         // Ajusta la rotación de la cámara para que mire hacia el jugador

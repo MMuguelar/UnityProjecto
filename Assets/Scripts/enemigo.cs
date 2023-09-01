@@ -1,97 +1,90 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.AI;
-using UnityEngine.UI;
+
 public class enemigo : Character
 {
-
-    public int rutina;
-    public float cronometro;
-    public Animator anim;   
-    public Quaternion angulo;
-    public GameObject target;
-    public bool atacando;
+    public float distanciaDePersecucion = 20.0f;
+    public float distanciaDeAtaque = 8.0f;
+    public float tiempoEntreAtaques = 2.0f;
     public float velocidad = 1.0f;
 
-    // Start is called before the first frame update
+    private Animator anim;
+    private Transform target;
+    private float cronometroAtaque;
+    private bool atacando;
+
     void Start()
     {
-         anim = GetComponent<Animator>();
-         target = GameObject.Find("personajeAnimaciones@Running (1) Variant");
-
+        anim = GetComponent<Animator>();
+        target = GameObject.Find("personajeAnimaciones@Running (1)").transform;
     }
 
-    // Update is called once per frame
     void Update()
     {
-    
-       Comportamiento_Enemigo();
-       base.Awake();
+        ComportamientoEnemigo();
+        base.Awake();
     }
-    public void Comportamiento_Enemigo()
-    {
-        anim.SetBool("run",false);
-        if (Vector3.Distance(transform.position, target.transform.position)>20 )
-        {
-            cronometro += 1 * Time.deltaTime;
-            if (cronometro >=4)
-            {
-                rutina = Random.Range(0,2);
-                cronometro = 0;
-            }
-            switch(rutina){
-                case 0:
-                anim.SetBool("walk",false);
-                Final_ani();
-                
-                break;
-                case 1:
-            int grado = Random.Range(0,160);
-                angulo= Quaternion.Euler(0, grado ,0);
-                rutina++;
 
-                break;
-                case 2:     
-                transform.rotation = Quaternion.RotateTowards(transform.rotation, angulo, 0.5f);
-                transform.Translate(Vector3.forward * velocidad * Time.deltaTime);
-                anim.SetBool("walk",true);
-                velocidad = 1.0f;
-                break;
-            }
-            if(Vector3.Distance(transform.position, target.transform.position)>8 && !atacando )
+    void ComportamientoEnemigo()
+    {
+        anim.SetBool("run", false);
+        float distanciaAlObjetivo = Vector3.Distance(transform.position, target.position);
+
+        if (distanciaAlObjetivo <= distanciaDePersecucion)
+        {
+            if (distanciaAlObjetivo <= distanciaDeAtaque)
             {
-                var lookPos = target.transform.position - transform.position;
-                lookPos.y = 0;
-                var rotation = Quaternion.LookRotation(lookPos);
-                transform.rotation = Quaternion.RotateTowards(transform.rotation, rotation, 3);
+                RotarHaciaObjetivo();
                 anim.SetBool("walk", false);
-                anim.SetBool("run",true );
-                velocidad = 3.0f;
-                transform.Translate(Vector3.forward * velocidad * 2 * Time.deltaTime);
-            }
-            else{
-                anim.SetBool("walk", false);
-                anim.SetBool("run",false );
-                anim.SetBool("attack",true );
+                anim.SetBool("run", false);
+                anim.SetBool("attack", true);
                 atacando = true;
-                cronometro = 0;
+
+                if (cronometroAtaque >= tiempoEntreAtaques)
+                {
+                    cronometroAtaque = 0;
+                }
+                else
+                {
+                    cronometroAtaque += Time.deltaTime;
+                }
+            }
+            else
+            {
+                RotarHaciaObjetivo();
+                anim.SetBool("walk", false);
+                anim.SetBool("run", true);
+                velocidad = 6.0f;
+                transform.Translate(Vector3.forward * velocidad * 2 * Time.deltaTime);
+                FinalizarAnimacionAtaque();
             }
         }
-        
+        else
+        {
+            FinalizarAnimacionAtaque();
+        }
     }
-    public void Final_ani()
+
+    void RotarHaciaObjetivo()
     {
-        anim.SetBool("attack",false);
-        atacando= false;
+        var lookPos = target.position - transform.position;
+        lookPos.y = 0;
+        var rotation = Quaternion.LookRotation(lookPos);
+        transform.rotation = Quaternion.RotateTowards(transform.rotation, rotation, 3);
     }
+
+    void FinalizarAnimacionAtaque()
+    {
+        anim.SetBool("attack", false);
+        atacando = false;
+    }
+
     protected override void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("hola");
-        
         if (collision.gameObject.CompareTag("Player"))
         {
-
+            // Implementa el comportamiento cuando el enemigo colisiona con el jugador aquí.
         }
     }
 }
