@@ -21,7 +21,7 @@ public class Enemy : Character
 
     protected override void Update()
     {
-        healthSlider.value = life;
+       // healthSlider.value = life;
         //bool estarAlerta = Physics.CheckSphere(transform.position, rangoDeAlerta, capaDelJugador);
         /*if (estarAlerta) 
         {

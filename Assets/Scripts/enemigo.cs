@@ -8,16 +8,17 @@ public class enemigo : Character
     public float distanciaDeAtaque = 8.0f;
     public float tiempoEntreAtaques = 2.0f;
     public float velocidad = 1.0f;
+    private Jugador player;
 
     private Animator anim;
-    private Transform target;
+    public Transform target;
     private float cronometroAtaque;
     private bool atacando;
 
     void Start()
     {
         anim = GetComponent<Animator>();
-        target = GameObject.Find("personajeAnimaciones@Running (1)").transform;
+        target = GameObject.Find("personajeAnimaciones@Running (1) Variant").transform;
     }
 
     void Update()
@@ -80,11 +81,5 @@ public class enemigo : Character
         atacando = false;
     }
 
-    protected override void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            // Implementa el comportamiento cuando el enemigo colisiona con el jugador aquí.
-        }
-    }
+  
 }

@@ -19,7 +19,7 @@ public class Character : MonoBehaviour
 
     protected virtual void Update()
     {
-        healthSlider.value = life;
+       healthSlider.value = life;
 
         if (damageTimer > 0)
         {

@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    
+    public float x =0;
+    public float y= 100;
+    public float z =  -12;
     public Transform jugador;
 // Start is called before the first frame update
     void Start()
@@ -26,7 +28,7 @@ public class CameraController : MonoBehaviour
         }
 
         // Ajusta la posición de la cámara
-        Vector3 offset = new Vector3(0, 100, -12); // Ajusta estos valores para cambiar la posición relativa de la cámara
+        Vector3 offset = new Vector3(x, y, z); // Ajusta estos valores para cambiar la posición relativa de la cámara
         
         transform.position = jugador.position + offset;
 
