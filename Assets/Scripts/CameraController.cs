@@ -5,13 +5,13 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
     public float x =0;
-    public float y= 100;
+    public float y= 24;
     public float z =  -12;
     public Transform jugador;
 // Start is called before the first frame update
     void Start()
     {
-        
+        jugador = GameObject.Find("Personaje principal").transform;
     }
 
     // Update is called once per frame

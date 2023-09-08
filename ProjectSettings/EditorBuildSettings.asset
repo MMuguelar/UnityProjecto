@@ -5,16 +5,19 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/menu.unity
     guid: 470713c94f36e9049ad8fde9f9579b05
+  - enabled: 1
+    path: Assets/Scenes/Juego.unity
+    guid: 76b62f77d8b13b343a985f9ae37c6ed4
+  - enabled: 1
+    path: Assets/Scenes/PuzzleDash.unity
+    guid: b3be96deb824c644da619e4de8494281
   - enabled: 0
     path: Assets/Scenes/Escena Practica.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 0
-    path: Assets/Scenes/PuzzleDash.unity
-    guid: b3be96deb824c644da619e4de8494281
-  - enabled: 1
     path: Assets/Scenes/Escena Animaciones.unity
     guid: 54235b079780af046871a8d9f1c5bc3d
   m_configObjects: {}

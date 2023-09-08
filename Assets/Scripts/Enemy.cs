@@ -14,14 +14,16 @@ public class Enemy : Character
     protected override void Awake()
     {
         maxLife = 15f;
-        contactDamage = 2f;
         base.Awake();
+        healthSlider.value = life;
+        contactDamage = 2f;
         agente = GetComponent<NavMeshAgent>();
     }
 
     protected override void Update()
     {
-       // healthSlider.value = life;
+        
+        //healthSlider.value = life;
         //bool estarAlerta = Physics.CheckSphere(transform.position, rangoDeAlerta, capaDelJugador);
         /*if (estarAlerta) 
         {

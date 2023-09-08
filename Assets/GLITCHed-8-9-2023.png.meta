@@ -1,0 +1,769 @@
+fileFormatVersion: 2
+guid: 7b61045ab6c15f34f8c8fa7a516b4a88
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GLITCHed-8-9-2023_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 579
+        width: 676
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89eca197d1bc2d642b3993529c7216e6
+      internalID: -353751682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GLITCHed-8-9-2023_1
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 579
+        width: 676
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 343d99134d8b92a4f9c808a1ed542f53
+      internalID: -2012411338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GLITCHed-8-9-2023_2
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 579
+        width: 676
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0e9f48a519a0a24f8954310b0a4c557
+      internalID: -1339138516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GLITCHed-8-9-2023_3
+      rect:
+        serializedVersion: 2
+        x: 2028
+        y: 579
+        width: 676
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f76a65ae21d06d4b955fc4bf71c80df
+      internalID: 24455427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GLITCHed-8-9-2023_4
+      rect:
+        serializedVersion: 2
+        x: 2704
+        y: 579
+        width: 676
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a25a5986662a3794b947980aa6296b58
+      internalID: 1855945161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GLITCHed-8-9-2023_5
+      rect:
+        serializedVersion: 2
+        x: 3380
+        y: 579
+        width: 676
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 877358488a5dd504194e2c4ea1643df7
+      internalID: -514438025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GLITCHed-8-9-2023_6
+      rect:
+        serializedVersion: 2
+        x: 4056
+        y: 579
+        width: 676
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4a7034c5ee038d4f8ea83063097ae3e
+      internalID: 1480217447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GLITCHed-8-9-2023_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 386
+        width: 676
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56bafaa5adc67fd4e86fa302c00009c6
+      internalID: -1067266319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GLITCHed-8-9-2023_8
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 386
+        width: 676
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31ca495c81775ce4d906d4a1d68d5971
+      internalID: -38111029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GLITCHed-8-9-2023_9
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 386
+        width: 676
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e70d8f33e3bc2fb4898c96b565487752
+      internalID: -2115254474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GLITCHed-8-9-2023_10
+      rect:
+        serializedVersion: 2
+        x: 2028
+        y: 386
+        width: 676
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e62f038bce00ee647a808ca940cb4b6a
+      internalID: 422363157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GLITCHed-8-9-2023_11
+      rect:
+        serializedVersion: 2
+        x: 2704
+        y: 386
+        width: 676
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65123c13fb1b6a7429f22303675bbce9
+      internalID: 405714309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GLITCHed-8-9-2023_12
+      rect:
+        serializedVersion: 2
+        x: 3380
+        y: 386
+        width: 676
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7b34fcb87505d54ebb3bf5ed688f403
+      internalID: -1502606324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GLITCHed-8-9-2023_13
+      rect:
+        serializedVersion: 2
+        x: 4056
+        y: 386
+        width: 676
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7086fd22690dd5d4e81c193cb53228ee
+      internalID: -532949664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GLITCHed-8-9-2023_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 193
+        width: 676
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42719f2f8da08434ba0e435a99431ffd
+      internalID: 836793298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GLITCHed-8-9-2023_15
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 193
+        width: 676
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d925b373f6f20741b60f738039d07dd
+      internalID: 1800277524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GLITCHed-8-9-2023_16
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 193
+        width: 676
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83407e5434133d44da44cb18a093ee2d
+      internalID: -1466654912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GLITCHed-8-9-2023_17
+      rect:
+        serializedVersion: 2
+        x: 2028
+        y: 193
+        width: 676
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e73b07493ebcfa46aa608003afe205a
+      internalID: -1854689233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GLITCHed-8-9-2023_18
+      rect:
+        serializedVersion: 2
+        x: 2704
+        y: 193
+        width: 676
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d03630653288817498679b313d7fdb89
+      internalID: 1343076060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GLITCHed-8-9-2023_19
+      rect:
+        serializedVersion: 2
+        x: 3380
+        y: 193
+        width: 676
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2041b952f1d5f6459408b60362180f1
+      internalID: 2063496804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GLITCHed-8-9-2023_20
+      rect:
+        serializedVersion: 2
+        x: 4056
+        y: 193
+        width: 676
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1065c15b1b2f8ae4880e82df79a560cd
+      internalID: 483655715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GLITCHed-8-9-2023_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 676
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70da50484159ef440a1c80657e0d3917
+      internalID: 2136465952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GLITCHed-8-9-2023_22
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 0
+        width: 676
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f1877c8f9e37d040ad13745caa39db4
+      internalID: -1379484808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GLITCHed-8-9-2023_23
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 0
+        width: 676
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82582073e965c3a4fb0eba1aea6c1035
+      internalID: 1867999875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GLITCHed-8-9-2023_24
+      rect:
+        serializedVersion: 2
+        x: 2028
+        y: 0
+        width: 676
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc1e1e7d3b1c2b24a975253a54c35b8b
+      internalID: 252773415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GLITCHed-8-9-2023_25
+      rect:
+        serializedVersion: 2
+        x: 2704
+        y: 0
+        width: 676
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 064c5d7cf23c6a74fbb7a62566e30736
+      internalID: -1940935446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GLITCHed-8-9-2023_26
+      rect:
+        serializedVersion: 2
+        x: 3380
+        y: 0
+        width: 676
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd4018de9fa066243b291dcfa014057f
+      internalID: -1904278157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GLITCHed-8-9-2023_27
+      rect:
+        serializedVersion: 2
+        x: 4056
+        y: 0
+        width: 676
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adbac9412e702034c93157ffa9d82fa7
+      internalID: -531879386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 48ab67a2cc9cbc044bc7503f3a3abd5e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      GLITCHed-8-9-2023_0: -353751682
+      GLITCHed-8-9-2023_1: -2012411338
+      GLITCHed-8-9-2023_10: 422363157
+      GLITCHed-8-9-2023_11: 405714309
+      GLITCHed-8-9-2023_12: -1502606324
+      GLITCHed-8-9-2023_13: -532949664
+      GLITCHed-8-9-2023_14: 836793298
+      GLITCHed-8-9-2023_15: 1800277524
+      GLITCHed-8-9-2023_16: -1466654912
+      GLITCHed-8-9-2023_17: -1854689233
+      GLITCHed-8-9-2023_18: 1343076060
+      GLITCHed-8-9-2023_19: 2063496804
+      GLITCHed-8-9-2023_2: -1339138516
+      GLITCHed-8-9-2023_20: 483655715
+      GLITCHed-8-9-2023_21: 2136465952
+      GLITCHed-8-9-2023_22: -1379484808
+      GLITCHed-8-9-2023_23: 1867999875
+      GLITCHed-8-9-2023_24: 252773415
+      GLITCHed-8-9-2023_25: -1940935446
+      GLITCHed-8-9-2023_26: -1904278157
+      GLITCHed-8-9-2023_27: -531879386
+      GLITCHed-8-9-2023_3: 24455427
+      GLITCHed-8-9-2023_4: 1855945161
+      GLITCHed-8-9-2023_5: -514438025
+      GLITCHed-8-9-2023_6: 1480217447
+      GLITCHed-8-9-2023_7: -1067266319
+      GLITCHed-8-9-2023_8: -38111029
+      GLITCHed-8-9-2023_9: -2115254474
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -18,7 +18,7 @@ public class enemigo : Character
     void Start()
     {
         anim = GetComponent<Animator>();
-        target = GameObject.Find("personajeAnimaciones@Running (1) Variant").transform;
+        target = GameObject.Find("Personaje principal").transform;
     }
 
     void Update()
@@ -81,5 +81,12 @@ public class enemigo : Character
         atacando = false;
     }
 
-  
+    protected override void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Debug.Log("hola");
+        }
+    }
 }
+

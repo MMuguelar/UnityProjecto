@@ -9,6 +9,7 @@ public class Jugador : Character
     protected override void Awake()
     {
         maxLife = 20f;
+        healthSlider.value = life;
         contactDamage = 3.5f;
         damageCooldown = 1.0f;
         base.Awake();
@@ -37,3 +38,4 @@ public class Jugador : Character
         }
     }
 }
+
