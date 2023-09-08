@@ -315,7 +315,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 597846441}
   m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: 0.002, y: -0.051, z: 0.0286}
+  m_LocalPosition: {x: -0.002, y: -0.051, z: 0.0385}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -336,7 +336,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidad: 20
   projectile: {fileID: 4746421529782357297, guid: 1966117eccda8b34083b06b8ec2f4fa8, type: 3}
-  fireDelta: 0.2
+  fireDelta: 1
   newProjectile: {fileID: 4746421529782357297, guid: 1966117eccda8b34083b06b8ec2f4fa8, type: 3}
 --- !u!1 &983415548
 GameObject:
@@ -601,13 +601,35 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7076759527469502862, guid: cb8bfb855fca2a247b24a2edea64899d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 597846442}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3920792960279048892, guid: cb8bfb855fca2a247b24a2edea64899d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1935995838}
   m_SourcePrefab: {fileID: 100100000, guid: cb8bfb855fca2a247b24a2edea64899d, type: 3}
+--- !u!1 &1935995831 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3920792960279048892, guid: cb8bfb855fca2a247b24a2edea64899d, type: 3}
+  m_PrefabInstance: {fileID: 1829812509}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1935995837 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4405264530229733382, guid: cb8bfb855fca2a247b24a2edea64899d, type: 3}
   m_PrefabInstance: {fileID: 1829812509}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1935995838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1935995831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a45e99e6a457abf46a74d625f5a1634e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contactDamage: 0
+  healthSlider: {fileID: 0}
 --- !u!1 &2086231157
 GameObject:
   m_ObjectHideFlags: 0
@@ -835,7 +857,7 @@ PrefabInstance:
     - target: {fileID: 3297502817755082985, guid: 2480a595d4837c74894abcbfc54b78a3, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1935995837}
     - target: {fileID: 3297502817755082985, guid: 2480a595d4837c74894abcbfc54b78a3, type: 3}
       propertyPath: m_Enabled
       value: 1

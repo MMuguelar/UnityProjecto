@@ -11,6 +11,7 @@ public class Movement : MonoBehaviour
     public float gravity = -9.8f;
     private Vector3 movement;
     private bool isMovingToMouse = false;
+    private Character Cha;
 
     void Start()
     {
@@ -76,6 +77,11 @@ public class Movement : MonoBehaviour
          if(Input.GetMouseButtonUp(1))
         {
             anim.SetBool("IsRunW",false);
+        }
+        if(Cha.life == 0){
+            anim.SetBool("IsRunW",false);
+            anim.SetBool("die",true);
+
         }
     }
 }
