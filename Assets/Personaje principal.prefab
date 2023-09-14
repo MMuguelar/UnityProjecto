@@ -609,9 +609,6 @@ PrefabInstance:
       addedObject: {fileID: 8376757114351248600}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fedf19a96af172b4b84e17235e0697db, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3750895318532542388}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fedf19a96af172b4b84e17235e0697db, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 8126717029549903974}
   m_SourcePrefab: {fileID: 100100000, guid: fedf19a96af172b4b84e17235e0697db, type: 3}
 --- !u!1 &3920792960279048892 stripped
@@ -708,20 +705,6 @@ MonoBehaviour:
   speed: 10
   rotationSpeed: 1000
   gravity: -1009.8
---- !u!114 &3750895318532542388
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3920792960279048892}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a45e99e6a457abf46a74d625f5a1634e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  contactDamage: 0
-  healthSlider: {fileID: 8714941747354399453}
 --- !u!114 &8126717029549903974
 MonoBehaviour:
   m_ObjectHideFlags: 0

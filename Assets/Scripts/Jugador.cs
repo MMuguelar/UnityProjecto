@@ -17,7 +17,7 @@ public class Jugador : Character
 
     protected override void Update()
     {
-        healthSlider.value = life;
+        //healthSlider.value = life;
         base.Update();
     }
 

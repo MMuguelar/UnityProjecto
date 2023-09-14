@@ -18,7 +18,7 @@ public class Character : MonoBehaviour
     }
     protected virtual void Update()
     {
-        
+        healthSlider.value = life;
         Debug.Log("Vida:" + healthSlider.value);
         if (damageTimer > 0)
         {

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Movement : MonoBehaviour
 {
@@ -11,10 +12,11 @@ public class Movement : MonoBehaviour
     public float gravity = -9.8f;
     private Vector3 movement;
     private bool isMovingToMouse = false;
-    private Character Cha;
+    private Jugador jug = new Jugador();
 
     void Start()
     {
+        //jug = GameObject.Find("Personaje principal");
         characterController = GetComponent<CharacterController>();
         anim = GetComponent<Animator>();
     }
@@ -78,7 +80,7 @@ public class Movement : MonoBehaviour
         {
             anim.SetBool("IsRunW",false);
         }
-        if(Cha.life == 0){
+        if(jug.life == 0){
             anim.SetBool("IsRunW",false);
             anim.SetBool("die",true);
 
