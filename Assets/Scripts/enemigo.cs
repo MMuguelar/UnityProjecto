@@ -9,22 +9,24 @@ public class enemigo : Character
     public float tiempoEntreAtaques = 2.0f;
     public float velocidad = 1.0f;
     private Jugador player;
-
     private Animator anim;
     public Transform target;
     private float cronometroAtaque;
     private bool atacando;
 
-    void Start()
-    {
+    protected override void Awake() {
+        maxLife = 15f;
+        contactDamage = 2f;
+        damageCooldown = 1.0f;
+        base.Awake();
         anim = GetComponent<Animator>();
         target = GameObject.Find("Personaje principal").transform;
     }
 
-    void Update()
+    protected override void Update()
     {
         ComportamientoEnemigo();
-        base.Awake();
+        base.Update();
     }
 
     void ComportamientoEnemigo()
@@ -89,3 +91,4 @@ public class enemigo : Character
         }
     }
 }
+

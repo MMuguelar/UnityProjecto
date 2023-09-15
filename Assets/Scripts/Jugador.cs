@@ -22,15 +22,14 @@ public class Jugador : Character
     }
 
     protected override void OnCollisionEnter(Collision collision)
-    {Debug.LogWarning("contacto");   
+    {
         if (collision.gameObject.CompareTag("Enemy"))
-        {Debug.LogWarning("contacto");   
+        {
             Enemy enemy = collision.gameObject.GetComponent<Enemy>();
             if (enemy != null)
             {
                 TakeDamage(enemy.contactDamage);
                 enemy.TakeDamage(contactDamage);
-                Debug.LogWarning("contacto");   
             }
             else
             {
