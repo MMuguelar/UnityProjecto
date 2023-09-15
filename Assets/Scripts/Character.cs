@@ -40,7 +40,7 @@ public class Character : MonoBehaviour
 
             if (life <= 0)
             {
-                Destroy(gameObject);
+                
             }
 
             damageTimer = damageCooldown;

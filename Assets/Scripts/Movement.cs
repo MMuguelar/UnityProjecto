@@ -12,13 +12,15 @@ public class Movement : MonoBehaviour
     public float gravity = -9.8f;
     private Vector3 movement;
     private bool isMovingToMouse = false;
-    private Jugador jug = new Jugador();
+    public Jugador jug ;
+    
 
     void Start()
     {
         //jug = GameObject.Find("Personaje principal");
         characterController = GetComponent<CharacterController>();
         anim = GetComponent<Animator>();
+        jug = GameObject.Find("Personaje principal").GetComponent<Jugador>();
     }
 
     void Update()

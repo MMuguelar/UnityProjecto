@@ -14,9 +14,10 @@ public class Enemy : Character
     protected override void Awake()
     {
         maxLife = 15f;
-        base.Awake();
         healthSlider.value = life;
         contactDamage = 2f;
+        base.Awake();
+        
         agente = GetComponent<NavMeshAgent>();
     }
 
