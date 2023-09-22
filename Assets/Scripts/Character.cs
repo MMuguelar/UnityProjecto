@@ -13,13 +13,14 @@ public class Character : MonoBehaviour
     public Slider healthSlider;
 
     protected virtual void Awake()
-    {
+    { 
         life = maxLife;
     }
     protected virtual void Update()
     {
+        healthSlider.maxValue = maxLife;
         healthSlider.value = life;
-        Debug.Log("Vida:" + healthSlider.value);
+        //Debug.Log("Vida:" + healthSlider.value);
         if (damageTimer > 0)
         {
             damageTimer -= Time.deltaTime;

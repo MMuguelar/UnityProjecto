@@ -47,3 +47,4 @@ MonoBehaviour:
   moveDirection: {x: 0, y: 0, z: 0}
   dashDistance: 10
   dashStoppingSpeed: 0.1
+  boolDash: {fileID: 683645607170748865, guid: 468fa34a23001094e843e03a855c7586, type: 3}

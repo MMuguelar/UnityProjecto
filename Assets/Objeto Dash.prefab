@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2321184235254507558}
   m_Layer: 0
   m_Name: Objeto Dash
-  m_TagString: Untagged
+  m_TagString: Dash
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

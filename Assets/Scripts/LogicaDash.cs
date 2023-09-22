@@ -10,8 +10,9 @@ public class LogicaDash : MonoBehaviour
     public float dashStoppingSpeed = 0.1f;
     float currentDashTime = maxDashTime;
     float dashSpeed = 10;
+    public UnblockDash boolDash;
 
-    private void Awake()
+    private void Update()
     {
 
     }
