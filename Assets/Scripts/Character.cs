@@ -7,7 +7,7 @@ public class Character : MonoBehaviour
 {
     protected float maxLife { get; set;} 
     public float life { get; protected set; }
-    public float contactDamage;
+    public float contactDamage { get; set;}
     protected float damageCooldown;
     protected float damageTimer;
     public Slider healthSlider;
@@ -20,7 +20,7 @@ public class Character : MonoBehaviour
     {
         healthSlider.maxValue = maxLife;
         healthSlider.value = life;
-        //Debug.Log("Vida:" + healthSlider.value);
+        Debug.Log("Vida:" + healthSlider.value);
         if (damageTimer > 0)
         {
             damageTimer -= Time.deltaTime;

@@ -25,6 +25,7 @@ public class Jugador : Character
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
+            Debug.Log("SEÑORAAAAAAAAAAAAAAAAAAAAAAAA hola");
             Enemy enemy = collision.gameObject.GetComponent<Enemy>();
             if (enemy != null)
             {

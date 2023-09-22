@@ -56,7 +56,7 @@ public class enemigo : Character
             if (!atacando)
             {
                 DealDamage(); // Call a method to apply damage to the player.
-                Debug.Log("empuje");
+                //Debug.Log("empuje");
             }
 
             // Check if enough time has passed to allow another attack.
@@ -64,13 +64,13 @@ public class enemigo : Character
             {
                 cronometroAtaque = 0;
                 atacando = true; // Set atacando to true for continuous attacks.
-                  Debug.Log("real");
+                  //Debug.Log("real");
             }
             else
             {
                 cronometroAtaque += Time.deltaTime;
                 atacando = false; // Set atacando to false if the attack cooldown is not complete.
-                Debug.Log("falso");
+                //Debug.Log("falso");
             }
         }
         else
@@ -115,18 +115,18 @@ public class enemigo : Character
         // Implement your damage logic here.
         // You can access the player reference (this.player) and apply damage to it.
         // Example: this.player.TakeDamage(contactDamage);
-            // Apply a force to push the player back slightly.
-    if (this.player != null)
-    {
-        Rigidbody playerRigidbody = this.player.GetComponent<Rigidbody>();
-
-        if (playerRigidbody != null)
+        // Apply a force to push the player back slightly.
+        if (this.player != null)
         {
-            Vector3 pushDirection = (this.player.transform.position - transform.position).normalized;
-            float pushForce = 10f; // Adjust this value as needed to control the force of the push.
-            playerRigidbody.AddForce(pushDirection * pushForce, ForceMode.Impulse);
+            Rigidbody playerRigidbody = this.player.GetComponent<Rigidbody>();
+
+            if (playerRigidbody != null)
+            {
+                Vector3 pushDirection = (this.player.transform.position - transform.position).normalized;
+                float pushForce = 10f; // Adjust this value as needed to control the force of the push.
+                playerRigidbody.AddForce(pushDirection * pushForce, ForceMode.Impulse);
+            }
         }
-    }
 
     }
 
@@ -134,7 +134,7 @@ public class enemigo : Character
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("hola");
+            Debug.Log("SEÑORAAAAAAAAAAAAAAA hola");
         }
     }
 }
