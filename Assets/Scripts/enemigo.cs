@@ -18,6 +18,7 @@ public class enemigo : Character
 
     protected override void Awake() {
         maxLife = 15f;
+        healthSlider.value = life;
         contactDamage = 2f;
         damageCooldown = 1.0f;
         base.Awake();

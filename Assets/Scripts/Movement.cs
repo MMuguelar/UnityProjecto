@@ -12,15 +12,14 @@ public class Movement : MonoBehaviour
     public float gravity = -9.8f;
     private Vector3 movement;
     private bool isMovingToMouse = false;
-    public Jugador jug ;
-    
+    public UnblockDash boolDash;
+    public LogicaDash dash;
 
     void Start()
     {
-        //jug = GameObject.Find("Personaje principal");
+        boolDash = GameObject.Find("Objeto Dash").GetComponent<UnblockDash>();
         characterController = GetComponent<CharacterController>();
         anim = GetComponent<Animator>();
-        jug = GameObject.Find("Personaje principal").GetComponent<Jugador>();
     }
 
     void Update()
@@ -34,7 +33,6 @@ public class Movement : MonoBehaviour
         if (Input.GetMouseButtonDown(1))
         {
             isMovingToMouse = true;
-        
         }
 
         if (Input.GetMouseButtonUp(1))
@@ -58,12 +56,21 @@ public class Movement : MonoBehaviour
                 {
                     Quaternion rotation = Quaternion.LookRotation(lookDirection);
                     transform.rotation = Quaternion.RotateTowards(transform.rotation, rotation, rotationSpeed * Time.deltaTime);
+
+                    // Llamar a UseDash con la rotación actual del personaje
+                    Debug.Log("hola,soy el dash" + boolDash.DashActivo);
+                    if (boolDash.DashActivo == true)
+                    {
+                        Debug.Log("hola,soy el dash" + boolDash.DashActivo);
+                        //Debug.Log("hola");
+                        dash.UseDash(characterController, transform.rotation); 
+                    }
+                    
                 }
             }
 
             // Mover al personaje hacia adelante
             movement = transform.forward;
-           
         }
 
         // Gravedad
@@ -74,18 +81,13 @@ public class Movement : MonoBehaviour
 
         // Animaciones
         float movementSpeed = movement.magnitude;
-        if(Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(1))
         {
-            anim.SetBool("IsRunW",true);
+            anim.SetBool("IsRunW", true);
         }
-         if(Input.GetMouseButtonUp(1))
+        if (Input.GetMouseButtonUp(1))
         {
-            anim.SetBool("IsRunW",false);
-        }
-        if(jug.life == 0){
-            anim.SetBool("IsRunW",false);
-            anim.SetBool("die",true);
-
+            anim.SetBool("IsRunW", false);
         }
     }
 }
