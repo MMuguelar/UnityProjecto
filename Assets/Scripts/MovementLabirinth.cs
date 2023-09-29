@@ -9,10 +9,7 @@ public class MovementLabirinth : MonoBehaviour
     public float rotationSpeed = 1000f;
     public float gravity = -9.8f;
     private Vector3 movement;
-<<<<<<< HEAD
     private Rigidbody rb;    
-=======
->>>>>>> 5257445b37286dcce8479c0e20fb7e7b618ccb98
     private bool isMovingToMouse = false;
 
     void Start()
