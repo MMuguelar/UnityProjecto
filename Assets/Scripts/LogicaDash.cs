@@ -4,23 +4,32 @@ using UnityEngine;
 
 public class LogicaDash : MonoBehaviour
 {
-  public Vector3 moveDirection;
-    public const float maxDashTime = 0.15f;
+    public Vector3 moveDirection;
+    public const float maxDashTime = 0.1f;
     public float dashDistance = 0.1f; // Ajusta este valor para reducir la distancia del dash
     public float dashStoppingSpeed = 0.1f;
     float currentDashTime = maxDashTime;
-    float dashSpeed = 10;
+    float dashSpeed = 10f;
+    private float cooldown = 5f;
     public UnblockDash boolDash;
 
     private void Update()
     {
-
+        if (cooldown > 0)
+        {
+            cooldown -= Time.deltaTime;
+            cooldown = Mathf.Max(0, cooldown); // Asegurarse de que el cooldown no sea negativo
+            Debug.Log(cooldown);
+        }
     }
 
     // Update is called once per frame
     public void UseDash(CharacterController controller, Quaternion playerRotation)
     {
-        if (Input.GetButtonDown("Dash"))
+       
+
+        
+        if (Input.GetButtonDown("Dash") && cooldown <= 0)
         {
             Debug.Log("Dash");
             currentDashTime = 0;

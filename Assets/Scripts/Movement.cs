@@ -58,7 +58,7 @@ public class Movement : MonoBehaviour
                     transform.rotation = Quaternion.RotateTowards(transform.rotation, rotation, rotationSpeed * Time.deltaTime);
 
                     // Llamar a UseDash con la rotación actual del personaje
-                    Debug.Log("hola,soy el dash" + boolDash.DashActivo);
+                    //Debug.Log("hola,soy el dash" + boolDash.DashActivo);
                     if (boolDash.DashActivo == true)
                     {
                         Debug.Log("hola,soy el dash" + boolDash.DashActivo);

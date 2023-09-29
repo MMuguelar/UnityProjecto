@@ -10,7 +10,8 @@ public class MovementLabirinth : MonoBehaviour
     public float rotationSpeed = 500f;
     public float gravity = -9.8f;
     private Vector3 movement;
-    private Rigidbody rb;    private bool isMovingToMouse = false;
+    private Rigidbody rb;    
+    private bool isMovingToMouse = false;
 
     void Start()
     {
@@ -21,22 +22,50 @@ public class MovementLabirinth : MonoBehaviour
 
     void Update()
     {
-        float hor = Input.GetAxis("Mover horizontal");
-        float ver = Input.GetAxis("Mover vertical"); 
+        float hor = Input.GetAxis("Horizontal");
+        float ver = Input.GetAxis("Vertical"); 
 
         // Movimiento del personaje con las teclas de flecha
-        movement = new Vector3(hor, 0f, ver);
         movement.Normalize();
 
-        Vector3 movimiento = new Vector3(hor * speed, 0.0f, ver * speed);
-        /*if(Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(1))
         {
-            anim.SetBool("IsRunW",true);
+            isMovingToMouse = true;
         }
-         if(Input.GetMouseButtonUp(1))
+
+        if (Input.GetMouseButtonUp(1))
         {
-            anim.SetBool("IsRunW",false);
-        }*/
-        rb.AddForce(movimiento);
+            isMovingToMouse = false;
+        }
+
+        if (isMovingToMouse)
+        {
+            // Rotación del personaje hacia la dirección del mouse
+            Ray mouseRay = Camera.main.ScreenPointToRay(Input.mousePosition);
+            Plane groundPlane = new Plane(Vector3.up, transform.position);
+            float rayDistance;
+
+            if (groundPlane.Raycast(mouseRay, out rayDistance))
+            {
+                Vector3 point = mouseRay.GetPoint(rayDistance);
+                Vector3 lookDirection = point - transform.position;
+
+                if (lookDirection != Vector3.zero)
+                {
+                    Quaternion rotation = Quaternion.LookRotation(lookDirection);
+                    transform.rotation = Quaternion.RotateTowards(transform.rotation, rotation, rotationSpeed * Time.deltaTime);   
+                    
+                }
+            }
+
+            // Mover al personaje hacia adelante
+            movement = transform.forward;
+        }
+
+        // Gravedad
+        movement.y += gravity * Time.deltaTime;
+
+        // Mover al personaje
+        characterController.Move(movement * speed * Time.deltaTime);
     }
 }

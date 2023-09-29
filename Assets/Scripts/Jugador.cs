@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Jugador : Character
 {
-    private Enemy enemy;
+    private enemigo enemy;
 
     protected override void Awake()
     {
@@ -25,8 +25,9 @@ public class Jugador : Character
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            Debug.Log("SEÑORAAAAAAAAAAAAAAAAAAAAAAAA hola");
-            Enemy enemy = collision.gameObject.GetComponent<Enemy>();
+            Debug.Log("Me Choque");
+            enemigo enemy = /*collision.*/gameObject.GetComponent<enemigo>();
+            Debug.Log(enemy);
             if (enemy != null)
             {
                 TakeDamage(enemy.contactDamage);

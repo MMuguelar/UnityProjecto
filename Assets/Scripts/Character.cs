@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -20,10 +21,11 @@ public class Character : MonoBehaviour
     {
         healthSlider.maxValue = maxLife;
         healthSlider.value = life;
-        Debug.Log("Vida:" + healthSlider.value);
+        //Debug.Log("Vida:" + healthSlider.value);
         if (damageTimer > 0)
         {
             damageTimer -= Time.deltaTime;
+            damageTimer = Math.Max(0, damageTimer);
         }
     }
 

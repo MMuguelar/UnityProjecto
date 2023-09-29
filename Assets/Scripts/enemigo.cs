@@ -88,7 +88,7 @@ public class enemigo : Character
     else
     {
         FinalizarAnimacionAtaque();
-          Debug.Log("falsoPosi");
+        //Debug.Log("falsoPosi");
 
     }
 }

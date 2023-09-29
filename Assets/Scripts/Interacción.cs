@@ -21,7 +21,7 @@ public class Interaccion : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-            Debug.Log("entre");
+            //Debug.Log("entre");
             Texto.SetActive(true);
             zona = true;
         }

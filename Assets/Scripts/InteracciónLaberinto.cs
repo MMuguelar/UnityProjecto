@@ -11,12 +11,14 @@ public class InteraccionLaberinto : MonoBehaviour
     private bool zona = false;
     private bool player1 = false;   
     private bool player2 = false;
+    public bool completado = false;
     
     private void Update() {
 
         if(player1 == true & player2 == true)
         {
             zona = true;
+            completado = true;
         }
         if (zona == true)
         {
