@@ -14,14 +14,12 @@ public class UnblockDash : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(DashActivo);
     }
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
             DashActivo = true;
-            Debug.Log(DashActivo);
             //Destroy(gameObject);
         }
     }

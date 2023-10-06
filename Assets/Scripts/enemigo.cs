@@ -8,11 +8,12 @@ public class enemigo : Character
     public float distanciaDeAtaque = 8.0f;
     public float tiempoEntreAtaques = 2.0f;
     public float velocidad = 1.0f;
-    private Jugador player;
+    private Character player;
     private Animator anim;
     public Transform target;
     private float cronometroAtaque;
     private bool atacando;
+    public float damage = 2.0f;
 
     public int damageFrame = 10; // Change this to the frame you want.
 
@@ -20,10 +21,11 @@ public class enemigo : Character
         maxLife = 15f;
         healthSlider.value = life;
         contactDamage = 2f;
-        damageCooldown = 1.0f;
+        damageCooldown = 0f;
         base.Awake();
         anim = GetComponent<Animator>();
         target = GameObject.Find("Personaje principal").transform;
+        player = GameObject.Find("Personaje principal").GetComponent<Character>();
     }
 
     protected override void Update()
@@ -85,12 +87,6 @@ public class enemigo : Character
         
 
     }
-    else
-    {
-        FinalizarAnimacionAtaque();
-        //Debug.Log("falsoPosi");
-
-    }
 }
 
 
@@ -106,8 +102,8 @@ public class enemigo : Character
 
     void FinalizarAnimacionAtaque()
     {
-        anim.SetBool("attack", false);
-        atacando = false;
+       player.life = player.life - damage;
+      
     }
 
     void DealDamage()
@@ -130,11 +126,5 @@ public class enemigo : Character
 
     }
 
-    protected override void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            Debug.Log("SEÑORAAAAAAAAAAAAAAA hola");
-        }
-    }
+   
 }

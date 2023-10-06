@@ -14,12 +14,14 @@ public class Movement : MonoBehaviour
     private bool isMovingToMouse = false;
     public UnblockDash boolDash;
     public LogicaDash dash;
+    public Character player;
 
     void Start()
     {
         boolDash = GameObject.Find("Objeto Dash").GetComponent<UnblockDash>();
         characterController = GetComponent<CharacterController>();
         anim = GetComponent<Animator>();
+        player = GameObject.Find("Personaje principal").GetComponent<Character>();
     }
 
     void Update()
@@ -88,6 +90,10 @@ public class Movement : MonoBehaviour
         if (Input.GetMouseButtonUp(1))
         {
             anim.SetBool("IsRunW", false);
+        }
+        if (player.life <= 0)
+        {
+            anim.SetBool("die", true);
         }
     }
 }

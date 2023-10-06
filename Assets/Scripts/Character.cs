@@ -6,13 +6,14 @@ using UnityEngine.UI;
 
 public class Character : MonoBehaviour
 {
-    protected float maxLife { get; set;} 
-    public float life { get; protected set; }
+    protected float maxLife ;
+    public float life ;
     public float contactDamage { get; set;}
     protected float damageCooldown;
     protected float damageTimer;
     public Slider healthSlider;
 
+ 
     protected virtual void Awake()
     { 
         life = maxLife;
