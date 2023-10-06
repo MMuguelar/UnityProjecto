@@ -16,6 +16,7 @@ public class Movement : MonoBehaviour
     public LogicaDash dash;
     public Character player;
 
+
     void Start()
     {
         boolDash = GameObject.Find("Objeto Dash").GetComponent<UnblockDash>();
@@ -86,14 +87,27 @@ public class Movement : MonoBehaviour
         if (Input.GetMouseButtonDown(1))
         {
             anim.SetBool("IsRunW", true);
+        anim.SetBool("punch",false);
+      
         }
         if (Input.GetMouseButtonUp(1))
         {
             anim.SetBool("IsRunW", false);
+            
         }
         if (player.life <= 0)
         {
             anim.SetBool("die", true);
+            
         }
+        if (Input.GetMouseButtonUp(0))
+        {
+            anim.SetBool("punch",true);
+            
+        }
+         /*if (Input.GetButton("Fire1"))
+        {
+            anim.SetBool("punch",true);
+        }*/
     }
 }
