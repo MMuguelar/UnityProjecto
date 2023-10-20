@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class enemigo : Character
 {
+    private bool canTakeDamage = false;
     public float distanciaDePersecucion = 20.0f;
     public float distanciaDeAtaque = 8.0f;
     public float tiempoEntreAtaques = 2.0f;
@@ -14,7 +15,7 @@ public class enemigo : Character
     private float cronometroAtaque;
     private bool atacando;
     public float damage = 2.0f;
-
+     public float damageArma = 10;  
     public int damageFrame = 10; // Change this to the frame you want.
 
     protected override void Awake() {
@@ -31,6 +32,7 @@ public class enemigo : Character
     protected override void Update()
     {
         ComportamientoEnemigo();
+      
         base.Update();
     }
 
@@ -124,7 +126,33 @@ public class enemigo : Character
             }
         }
 
+
+    }
+private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("arma") && canTakeDamage)
+        {
+            life -= damageArma;  // Reducir la vida solo si se hizo clic izquierdo
+            if (life <= 0)
+            {
+                // El objeto ha quedado sin vida, puedes realizar acciones adicionales aquí
+                // Por ejemplo, destruir el objeto o reproducir una animación de muerte.
+                Destroy(gameObject);
+            }
+        }
     }
 
+    private void OnMouseDown()
+    {
+        // Este método se llama cuando se hace clic izquierdo en el objeto
+        canTakeDamage = true;  // Indicar que se puede recibir daño al hacer clic izquierdo
+    }
+
+    private void OnMouseUp()
+    {
+        // Este método se llama cuando se libera el clic izquierdo en el objeto
+        canTakeDamage = false;  // Indicar que no se puede recibir daño al liberar el clic izquierdo
+    }
    
+  
 }
