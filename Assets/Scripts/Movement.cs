@@ -15,7 +15,7 @@ public class Movement : MonoBehaviour
     public UnblockDash boolDash;
     public LogicaDash dash;
     public Character player;
-
+    private int punchPatron= 0;
 
     void Start()
     {
@@ -88,7 +88,7 @@ public class Movement : MonoBehaviour
         {
             anim.SetBool("IsRunW", true);
         anim.SetBool("punch",false);
-      
+       anim.SetBool("punch2",false);
         }
         if (Input.GetMouseButtonUp(1))
         {
@@ -100,14 +100,32 @@ public class Movement : MonoBehaviour
             anim.SetBool("die", true);
             
         }
-        if (Input.GetMouseButtonUp(0))
+        if (Input.GetMouseButtonUp(0)&&punchPatron== 0)
         {
+          anim.SetBool("punch2",false);
             anim.SetBool("punch",true);
             
+          
+            
         }
-         /*if (Input.GetButton("Fire1"))
-        {
-            anim.SetBool("punch",true);
-        }*/
+       if (Input.GetMouseButtonUp(0)&& punchPatron== 1)
+       {
+        anim.SetBool("punch",false);
+         anim.SetBool("punch2",true);
+        
+       }
+      
     }
+      void punch1()
+    {
+      punchPatron= 0;
+      
+    }
+
+      void punch2()
+    {
+      punchPatron= 1;
+      
+    }
+
 }
