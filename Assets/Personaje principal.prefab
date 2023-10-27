@@ -604,9 +604,6 @@ PrefabInstance:
       addedObject: {fileID: 3808355832591697780}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fedf19a96af172b4b84e17235e0697db, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8099873783025926040}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fedf19a96af172b4b84e17235e0697db, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 855835954943257183}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fedf19a96af172b4b84e17235e0697db, type: 3}
       insertIndex: -1
@@ -647,27 +644,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!65 &8099873783025926040
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3920792960279048892}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 4, z: 1}
-  m_Center: {x: 0, y: 2, z: 0}
 --- !u!143 &855835954943257183
 CharacterController:
   m_ObjectHideFlags: 0
@@ -711,6 +687,7 @@ MonoBehaviour:
   gravity: -1009.8
   boolDash: {fileID: 683645607170748865, guid: 468fa34a23001094e843e03a855c7586, type: 3}
   dash: {fileID: 8251485179494199423, guid: 49f8701f658490541b9e45aef6999896, type: 3}
+  player: {fileID: 8126717029549903974}
 --- !u!114 &8126717029549903974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -723,7 +700,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ead5279b1b40ce4192a090f2ac587d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  contactDamage: 3.5
+  life: 0
   healthSlider: {fileID: 8714941747354399453}
 --- !u!4 &4405264530229733382 stripped
 Transform:

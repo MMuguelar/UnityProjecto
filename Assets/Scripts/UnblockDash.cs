@@ -20,7 +20,7 @@ public class UnblockDash : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             DashActivo = true;
-            //Destroy(gameObject);
+            gameObject.SetActive(false);
         }
     }
 }

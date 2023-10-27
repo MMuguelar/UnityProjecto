@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4719892136587781880}
   - component: {fileID: 8367874308291168533}
-  - component: {fileID: 2738940509363563021}
+  - component: {fileID: -2121972168606763969}
   m_Layer: 0
   m_Name: Area cambio escena
   m_TagString: Untagged
@@ -31,7 +31,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &8367874308291168533
 BoxCollider:
@@ -54,7 +54,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.027493, y: 3.007783, z: 2}
   m_Center: {x: 0, y: 1, z: 0}
---- !u!114 &2738940509363563021
+--- !u!114 &-2121972168606763969
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -66,4 +66,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e1a5b58ad0e97f459fac18bf1753816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numeroEscena: 2
+  numeroEscena: 1
+  completado: 0

@@ -8,11 +8,17 @@ public class InteraccionLaberinto : MonoBehaviour
 {
     public int numeroEscena;
     //public GameObject Texto;
-    private bool zona = false;
-    private bool player1 = false;   
-    private bool player2 = false;
-    public bool completado = false;
+    private bool zona;
+    private bool player1;   
+    private bool player2;
+    public bool completado;
     
+    private void Awake() {
+        zona = false;
+        player1 = false;   
+        player2 = false;
+        completado = false;
+    }
     private void Update() {
 
         if(player1 == true & player2 == true)
@@ -22,6 +28,7 @@ public class InteraccionLaberinto : MonoBehaviour
         }
         if (zona == true)
         {
+            ControladorCompletado.Instance.CheckCompletado(completado);
             SceneManager.LoadScene(numeroEscena);
         } 
     }

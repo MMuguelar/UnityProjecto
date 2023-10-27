@@ -26,10 +26,7 @@ public class LogicaDash : MonoBehaviour
     // Update is called once per frame
     public void UseDash(CharacterController controller, Quaternion playerRotation)
     {
-       
-
-        
-        if (Input.GetButtonDown("Dash") && cooldown <= 0)
+        if (Input.GetKey("space") && cooldown <= 0)
         {
             Debug.Log("Dash");
             currentDashTime = 0;
