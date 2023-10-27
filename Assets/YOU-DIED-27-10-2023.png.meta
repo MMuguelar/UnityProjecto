@@ -1,0 +1,769 @@
+fileFormatVersion: 2
+guid: 1bb66a748cb3fa1498a91fc1c1392ea8
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: YOU-DIED-27-10-2023_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 570
+        width: 656
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 005bb9bb8a48d5449863da0003a6c0ae
+      internalID: 99664573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YOU-DIED-27-10-2023_1
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 570
+        width: 656
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 822c1f3df79b11142a29f0be4f3eaa55
+      internalID: 2140645729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YOU-DIED-27-10-2023_2
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 570
+        width: 656
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa447c64816b2494bbc581124ab3e641
+      internalID: 1206429328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YOU-DIED-27-10-2023_3
+      rect:
+        serializedVersion: 2
+        x: 1968
+        y: 570
+        width: 656
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c173e443f95b5f4d939f017a4a78817
+      internalID: -1995470705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YOU-DIED-27-10-2023_4
+      rect:
+        serializedVersion: 2
+        x: 2624
+        y: 570
+        width: 656
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7019d8bfb5b7db44b208abb748f1337
+      internalID: -367106411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YOU-DIED-27-10-2023_5
+      rect:
+        serializedVersion: 2
+        x: 3280
+        y: 570
+        width: 656
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c380a7d4f5da34445a6f66dacfd4dc8d
+      internalID: 1342245910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YOU-DIED-27-10-2023_6
+      rect:
+        serializedVersion: 2
+        x: 3936
+        y: 570
+        width: 656
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: febb0946755358d4eaa888d000b2868d
+      internalID: 1611949634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YOU-DIED-27-10-2023_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 380
+        width: 656
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4974b6441df26474c94c341915170b99
+      internalID: -1452949448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YOU-DIED-27-10-2023_8
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 380
+        width: 656
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d47c2b134ab988c4b840ba473afca014
+      internalID: -249357735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YOU-DIED-27-10-2023_9
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 380
+        width: 656
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea16aca50aa126f40ae2b30f22f591d4
+      internalID: -1281771804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YOU-DIED-27-10-2023_10
+      rect:
+        serializedVersion: 2
+        x: 1968
+        y: 380
+        width: 656
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 322330d919109fc4da0e649af4a5912a
+      internalID: -1087860712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YOU-DIED-27-10-2023_11
+      rect:
+        serializedVersion: 2
+        x: 2624
+        y: 380
+        width: 656
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8282b215d0738d1448bbae72358fd9ec
+      internalID: -896522670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YOU-DIED-27-10-2023_12
+      rect:
+        serializedVersion: 2
+        x: 3280
+        y: 380
+        width: 656
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ff086a1d63560a44a5d991f37808c07
+      internalID: -127210323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YOU-DIED-27-10-2023_13
+      rect:
+        serializedVersion: 2
+        x: 3936
+        y: 380
+        width: 656
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f3a79a69aabb6945a6b2a2d0b0b6faa
+      internalID: 850051784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YOU-DIED-27-10-2023_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 190
+        width: 656
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa33797393f11fc4fbc52c5391de6b2f
+      internalID: 276163792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YOU-DIED-27-10-2023_15
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 190
+        width: 656
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29227367bd20821449297da8e3825e4b
+      internalID: 319374187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YOU-DIED-27-10-2023_16
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 190
+        width: 656
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d85dd3babf8e54c43988e4d618b780ad
+      internalID: 380948324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YOU-DIED-27-10-2023_17
+      rect:
+        serializedVersion: 2
+        x: 1968
+        y: 190
+        width: 656
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fe350dac9359f64ca1fe37c1123771e
+      internalID: 1033833679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YOU-DIED-27-10-2023_18
+      rect:
+        serializedVersion: 2
+        x: 2624
+        y: 190
+        width: 656
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9eaa77fec32d3941ae90d75610c63f5
+      internalID: 733385562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YOU-DIED-27-10-2023_19
+      rect:
+        serializedVersion: 2
+        x: 3280
+        y: 190
+        width: 656
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 175a9794ca2116c4d8d716b6ffd15051
+      internalID: 115034863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YOU-DIED-27-10-2023_20
+      rect:
+        serializedVersion: 2
+        x: 3936
+        y: 190
+        width: 656
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 652a7ebb676dbd74790ed457cd278df0
+      internalID: 1346289487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YOU-DIED-27-10-2023_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 656
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e105da50851d4d54db66b476683364c9
+      internalID: -1726624327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YOU-DIED-27-10-2023_22
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 0
+        width: 656
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a4532381330df442b8f8d31b7a0f01c
+      internalID: 1748543960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YOU-DIED-27-10-2023_23
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 0
+        width: 656
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1db448f7bebdc64081a263afaa12957
+      internalID: 906675318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YOU-DIED-27-10-2023_24
+      rect:
+        serializedVersion: 2
+        x: 1968
+        y: 0
+        width: 656
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e089f55642b1a704ea4d99852f13e233
+      internalID: -2113207802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YOU-DIED-27-10-2023_25
+      rect:
+        serializedVersion: 2
+        x: 2624
+        y: 0
+        width: 656
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 955036e4a0f23774e94757f0be9f6f3c
+      internalID: -7843758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YOU-DIED-27-10-2023_26
+      rect:
+        serializedVersion: 2
+        x: 3280
+        y: 0
+        width: 656
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0640c42d45b31e04d9cb7bb25004e9ec
+      internalID: 2050296032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YOU-DIED-27-10-2023_27
+      rect:
+        serializedVersion: 2
+        x: 3936
+        y: 0
+        width: 656
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0911b3d7ec973194c9dbd048e2f7ecc3
+      internalID: 942686972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: ebac54bdcd9e7be4597d4c64f72138b0
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      YOU-DIED-27-10-2023_0: 99664573
+      YOU-DIED-27-10-2023_1: 2140645729
+      YOU-DIED-27-10-2023_10: -1087860712
+      YOU-DIED-27-10-2023_11: -896522670
+      YOU-DIED-27-10-2023_12: -127210323
+      YOU-DIED-27-10-2023_13: 850051784
+      YOU-DIED-27-10-2023_14: 276163792
+      YOU-DIED-27-10-2023_15: 319374187
+      YOU-DIED-27-10-2023_16: 380948324
+      YOU-DIED-27-10-2023_17: 1033833679
+      YOU-DIED-27-10-2023_18: 733385562
+      YOU-DIED-27-10-2023_19: 115034863
+      YOU-DIED-27-10-2023_2: 1206429328
+      YOU-DIED-27-10-2023_20: 1346289487
+      YOU-DIED-27-10-2023_21: -1726624327
+      YOU-DIED-27-10-2023_22: 1748543960
+      YOU-DIED-27-10-2023_23: 906675318
+      YOU-DIED-27-10-2023_24: -2113207802
+      YOU-DIED-27-10-2023_25: -7843758
+      YOU-DIED-27-10-2023_26: 2050296032
+      YOU-DIED-27-10-2023_27: 942686972
+      YOU-DIED-27-10-2023_3: -1995470705
+      YOU-DIED-27-10-2023_4: -367106411
+      YOU-DIED-27-10-2023_5: 1342245910
+      YOU-DIED-27-10-2023_6: 1611949634
+      YOU-DIED-27-10-2023_7: -1452949448
+      YOU-DIED-27-10-2023_8: -249357735
+      YOU-DIED-27-10-2023_9: -1281771804
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
