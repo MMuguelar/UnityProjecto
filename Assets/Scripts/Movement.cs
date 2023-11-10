@@ -21,7 +21,6 @@ public class Movement : MonoBehaviour
 
     void Start()
     {
-        boolDash = GameObject.Find("Objeto Dash").GetComponent<UnblockDash>();
         characterController = GetComponent<CharacterController>();
         anim = GetComponent<Animator>();
         player = GameObject.Find("Personaje principal").GetComponent<Character>();
@@ -64,9 +63,8 @@ public class Movement : MonoBehaviour
 
                     // Llamar a UseDash con la rotación actual del personaje
                     //Debug.Log("hola,soy el dash" + boolDash.DashActivo);
-                    if (ControladorDash.Instance.condicional /*boolDash.DashActivo*/ == true)
+                    if (ControladorDash.Instance.condicional == true)
                     {
-                        Debug.Log("hola,soy el dash" + boolDash.DashActivo);
                         //Debug.Log("hola");
                         dash.UseDash(characterController, transform.rotation); 
                     }
