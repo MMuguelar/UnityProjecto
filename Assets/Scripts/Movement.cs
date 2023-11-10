@@ -16,6 +16,8 @@ public class Movement : MonoBehaviour
     public LogicaDash dash;
     public Character player;
     private int punchPatron= 0;
+    private bool isPunching = false;
+    public float BateDamage = 1.5f;
 
     void Start()
     {
@@ -93,17 +95,19 @@ public class Movement : MonoBehaviour
         if (Input.GetMouseButtonUp(1))
         {
             anim.SetBool("IsRunW", false);
+        
             
         }
         if (player.life <= 0)
         {
             anim.SetBool("die", true);
-            
+   
         }
         if (Input.GetMouseButtonUp(0)&&punchPatron== 0)
         {
           anim.SetBool("punch2",false);
             anim.SetBool("punch",true);
+             isPunching = true;
             
           
             
@@ -112,6 +116,7 @@ public class Movement : MonoBehaviour
        {
         anim.SetBool("punch",false);
          anim.SetBool("punch2",true);
+          isPunching = true;
         
        }
       
@@ -128,4 +133,15 @@ public class Movement : MonoBehaviour
       
     }
 
+public void ApplyDamage(enemigo enemy)
+{
+    if (isPunching==true)
+    {
+        // Aplicar daño al enemigo
+        enemy.TakeDamage(BateDamage);
+
+        // Restablecer la bandera de golpe una vez que el daño se haya aplicado
+        isPunching = false;
+    }
+}
 }

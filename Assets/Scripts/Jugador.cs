@@ -21,12 +21,12 @@ public class Jugador : Character
         base.Update();
     }
 
-    protected override void OnCollisionEnter(Collision collision)
+    /*protected override void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
             Debug.Log("Me Choque");
-            enemigo enemy = /*collision.*/gameObject.GetComponent<enemigo>();
+            enemigo enemy = collision.gameObject.GetComponent<enemigo>();
             Debug.Log(enemy);
             if (enemy != null)
             {
@@ -38,6 +38,6 @@ public class Jugador : Character
                 Debug.LogWarning("No se encontró el componente Enemy en el objeto de colisión.");
             }
         }
-    }
+    }*/
 }
 
