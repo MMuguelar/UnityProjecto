@@ -2,15 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ControladorCompletado : MonoBehaviour
+public class ControladorDash : MonoBehaviour
 {
-    public static ControladorCompletado Instance;
+    public static ControladorDash Instance;
     public bool condicional;
 
     private void Awake() {
         condicional = false;
-        if(ControladorCompletado.Instance == null){
-            ControladorCompletado.Instance = this;
+        if(ControladorDash.Instance == null){
+            ControladorDash.Instance = this;
             DontDestroyOnLoad(this.gameObject);
         }else{
             Destroy(gameObject);

@@ -62,7 +62,7 @@ public class Movement : MonoBehaviour
 
                     // Llamar a UseDash con la rotación actual del personaje
                     //Debug.Log("hola,soy el dash" + boolDash.DashActivo);
-                    if (boolDash.DashActivo == true)
+                    if (ControladorDash.Instance.condicional /*boolDash.DashActivo*/ == true)
                     {
                         Debug.Log("hola,soy el dash" + boolDash.DashActivo);
                         //Debug.Log("hola");

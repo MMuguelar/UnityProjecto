@@ -10,25 +10,39 @@ public class LogicaDash : MonoBehaviour
     public float dashStoppingSpeed = 0.1f;
     float currentDashTime = maxDashTime;
     float dashSpeed = 10f;
-    private float cooldown = 5f;
-    public UnblockDash boolDash;
+    float cooldown = 3f;
 
-    private void Update()
-    {
+    private void FixedUpdate() {
+
         if (cooldown > 0)
         {
             cooldown -= Time.deltaTime;
             cooldown = Mathf.Max(0, cooldown); // Asegurarse de que el cooldown no sea negativo
-            Debug.Log(cooldown);
+            Debug.Log("Cooldown: " + cooldown);
         }
+    }
+    private void Update()
+    {
+        /*if (cooldown > 0)
+        {
+            cooldown -= Time.deltaTime;
+            cooldown = Mathf.Max(0, cooldown); // Asegurarse de que el cooldown no sea negativo
+            Debug.Log("Cooldown: " + cooldown);
+        }*/
     }
 
     // Update is called once per frame
     public void UseDash(CharacterController controller, Quaternion playerRotation)
     {
-        if (Input.GetKey("space") && cooldown <= 0)
+        if (Input.GetButtonDown("Dash") && cooldown <= 0){
+        Debug.Log("Hola");
+        }else{
+            //Debug.Log("Coolgown: "+cooldown);
+        }
+        if (Input.GetButtonDown("Dash") && cooldown <= 0)
         {
             Debug.Log("Dash");
+            cooldown = 3f;
             currentDashTime = 0;
 
             // Calcular la dirección del dash en función de la rotación del personaje
@@ -38,7 +52,7 @@ public class LogicaDash : MonoBehaviour
         else if (currentDashTime < maxDashTime)
         {
             // Continuar el dash actual
-            currentDashTime += Time.deltaTime;
+            currentDashTime += Time.fixedDeltaTime;
 
             // Puedes seguir aplicando la dirección y velocidad actual aquí si lo deseas
         }
@@ -46,6 +60,12 @@ public class LogicaDash : MonoBehaviour
         {
             // Detener el dash si se ha alcanzado el tiempo máximo
             moveDirection = Vector3.zero;
+        } 
+        if (cooldown > 0)  // Add this condition to decrement cooldown when not dashing
+        {
+            cooldown -= Time.fixedDeltaTime;
+            cooldown = Mathf.Max(0, cooldown);
+            Debug.Log("Cooldown: " + cooldown);
         }
 
         // Mover al personaje

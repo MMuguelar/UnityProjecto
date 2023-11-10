@@ -6,9 +6,8 @@ public class UnblockDash : MonoBehaviour
 {
     public bool DashActivo;
     // Start is called before the first frame update
-    void Start()
-    {
-        
+    private void Awake() {
+        DashActivo = false;
     }
 
     // Update is called once per frame
@@ -20,6 +19,7 @@ public class UnblockDash : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             DashActivo = true;
+            ControladorDash.Instance.CheckBool(DashActivo);
             gameObject.SetActive(false);
         }
     }

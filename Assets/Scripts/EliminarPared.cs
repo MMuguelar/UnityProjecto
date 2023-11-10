@@ -14,7 +14,7 @@ public class Eliminar : MonoBehaviour
     }
     void Update()
     {
-        if (ControladorCompletado.Instance.completo == true)
+        if (ControladorCompletado.Instance.condicional == true)
         {
             transform.position = newPos;
             area.SetActive(false);
@@ -22,7 +22,6 @@ public class Eliminar : MonoBehaviour
         }else{
             transform.position= initialPos;
             area.SetActive(true);
-
             techo.SetActive(true);
         }
     }

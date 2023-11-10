@@ -2,15 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ControladorCompletado : MonoBehaviour
+public class ControladorJefe : MonoBehaviour
 {
-    public static ControladorCompletado Instance;
+    public static ControladorJefe Instance;
     public bool condicional;
 
     private void Awake() {
         condicional = false;
-        if(ControladorCompletado.Instance == null){
-            ControladorCompletado.Instance = this;
+        if(ControladorJefe.Instance == null){
+            ControladorJefe .Instance = this;
             DontDestroyOnLoad(this.gameObject);
         }else{
             Destroy(gameObject);

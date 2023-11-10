@@ -28,7 +28,7 @@ public class InteraccionLaberinto : MonoBehaviour
         }
         if (zona == true)
         {
-            ControladorCompletado.Instance.CheckCompletado(completado);
+            ControladorCompletado.Instance.CheckBool(completado);
             SceneManager.LoadScene(numeroEscena);
         } 
     }
