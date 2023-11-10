@@ -19,11 +19,12 @@ public class ControladorCompletado : MonoBehaviour
 
     public void CheckBool(bool newBool)
     {
-        if (newBool == true)
+         condicional = newBool;
+        /*if (newBool == true)
         {
             condicional = true;
         }else{
             condicional = false;
-        }
+        }*/
     }
 }

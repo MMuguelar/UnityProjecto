@@ -688,6 +688,7 @@ MonoBehaviour:
   boolDash: {fileID: 683645607170748865, guid: 468fa34a23001094e843e03a855c7586, type: 3}
   dash: {fileID: 8251485179494199423, guid: 49f8701f658490541b9e45aef6999896, type: 3}
   player: {fileID: 8126717029549903974}
+  BateDamage: 1.5
 --- !u!114 &8126717029549903974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -702,6 +703,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   life: 0
   healthSlider: {fileID: 8714941747354399453}
+  muerto: 0
 --- !u!4 &4405264530229733382 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: fedf19a96af172b4b84e17235e0697db, type: 3}

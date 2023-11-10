@@ -5,6 +5,7 @@ using UnityEngine;
 public class Jugador : Character
 {
     private enemigo enemy;
+    public bool muerto;
 
     protected override void Awake()
     {
@@ -12,6 +13,7 @@ public class Jugador : Character
         healthSlider.value = life;
         contactDamage = 3.5f;
         damageCooldown = 1.0f;
+        muerto = false;
         base.Awake();
     }
 
@@ -19,6 +21,11 @@ public class Jugador : Character
     {
         //healthSlider.value = life;
         base.Update();
+        Debug.Log(life);
+        if(life <= 0){
+            muerto = true;
+            ControladorMuerte.Instance.CheckBool(muerto);
+        }
     }
 
     /*protected override void OnCollisionEnter(Collision collision)
