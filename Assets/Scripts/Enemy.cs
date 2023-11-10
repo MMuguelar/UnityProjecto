@@ -40,8 +40,8 @@ public class Enemy : Character
             Jugador player = collision.gameObject.GetComponent<Jugador>();
             if (player != null)
             {
-                TakeDamage(player.contactDamage);
-                player.TakeDamage(contactDamage);
+               // TakeDamage(player.contactDamage);
+               // player.TakeDamage(contactDamage);
             }
             else
             {
