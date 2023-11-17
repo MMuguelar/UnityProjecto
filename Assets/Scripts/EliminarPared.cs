@@ -17,6 +17,7 @@ public class Eliminar : MonoBehaviour
         if (ControladorCompletado.Instance.condicional == true)
         {
             transform.position = newPos;
+            Destroy(gameObject);
             area.SetActive(false);
             techo.SetActive(false);
         }else{

@@ -19,7 +19,7 @@ public class enemigo : Character
     public int damageFrame = 10; // Change this to the frame you want.
 
     protected override void Awake() {
-        maxLife = 15f;
+        maxLife = 10f;
         healthSlider.value = life;
         contactDamage = 2f;
         base.Awake();
@@ -85,7 +85,10 @@ public class enemigo : Character
             velocidad = 6.0f;
             transform.Translate(Vector3.forward * velocidad * 2 * Time.deltaTime);
         }
-        
+        if(life <= 0){
+            Destroy(gameObject);
+            ControladorJefe.Instance.CheckBool(true);
+        }
 
     }
 }
@@ -127,7 +130,8 @@ public class enemigo : Character
 
 
     }
-private void OnCollisionEnter(Collision collision)
+
+    protected override void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("arma") && canTakeDamage)
         {

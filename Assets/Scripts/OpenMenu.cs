@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class OpenMenu : MonoBehaviour
 {    
 
-    public string pauseMenuSceneName = "menu"; // Assign the name of your pause menu scene in the Inspector
+    /*public string pauseMenuSceneName = "menu"; // Assign the name of your pause menu scene in the Inspector
 
     public void TogglePauseMenu()
     {
@@ -25,5 +25,5 @@ public class OpenMenu : MonoBehaviour
     public void UnloadPauseMenu()
     {
         SceneManager.UnloadSceneAsync(pauseMenuSceneName);
-    }
+    }*/
 }

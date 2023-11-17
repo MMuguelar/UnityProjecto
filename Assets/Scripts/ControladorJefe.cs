@@ -10,7 +10,7 @@ public class ControladorJefe : MonoBehaviour
     private void Awake() {
         condicional = false;
         if(ControladorJefe.Instance == null){
-            ControladorJefe .Instance = this;
+            ControladorJefe.Instance = this;
             DontDestroyOnLoad(this.gameObject);
         }else{
             Destroy(gameObject);

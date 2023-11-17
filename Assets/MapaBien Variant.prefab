@@ -2124,37 +2124,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.12921108, y: 0.020000057, z: 0.12000008}
   m_Center: {x: -0.045394503, y: 0.00000012182532, z: 0.050000027}
---- !u!1 &6419139233959852716
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 846487580972635789}
-  m_Layer: 0
-  m_Name: Basura
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &846487580972635789
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6419139233959852716}
-  m_LocalRotation: {x: -0, y: 0.037130184, z: -0, w: -0.99931043}
-  m_LocalPosition: {x: 58.1, y: 4.19, z: 8.579998}
-  m_LocalScale: {x: 18, y: 8, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3850295647718460856}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6708601872402059474
 GameObject:
   m_ObjectHideFlags: 0
@@ -3388,9 +3357,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: d3b893c5d19ff8a4fbd9548fb65a5496, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7887108777758402397}
-    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: d3b893c5d19ff8a4fbd9548fb65a5496, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 846487580972635789}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: d3b893c5d19ff8a4fbd9548fb65a5496, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1638547356711638705}

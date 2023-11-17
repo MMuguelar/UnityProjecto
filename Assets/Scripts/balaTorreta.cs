@@ -18,7 +18,7 @@ public class balaTorreta : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         
-        if (collision.gameObject.CompareTag("Jugador"))
+        if (collision.gameObject.CompareTag("Player"))
         {
             Jugador Jugador = collision.gameObject.GetComponent<Jugador>();
 
