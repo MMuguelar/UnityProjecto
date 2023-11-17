@@ -9,8 +9,6 @@ public class Character : MonoBehaviour
     protected float maxLife ;
     public float life ;
     public float contactDamage { get; set;}
-    protected float damageCooldown;
-    protected float damageTimer;
     public Slider healthSlider;
 
  
@@ -23,11 +21,6 @@ public class Character : MonoBehaviour
         healthSlider.maxValue = maxLife;
         healthSlider.value = life;
         //Debug.Log("Vida:" + healthSlider.value);
-        if (damageTimer > 0)
-        {
-            damageTimer -= Time.deltaTime;
-            damageTimer = Math.Max(0, damageTimer);
-        }
     }
 
     protected virtual void OnCollisionEnter(Collision collision)
@@ -37,17 +30,12 @@ public class Character : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-        if (damageTimer <= 0)
+        life -= damage;
+        Debug.Log("Vida restante: " + life);
+
+        if (life <= 0)
         {
-            life -= damage;
-            Debug.Log("Vida restante: " + life);
-
-            if (life <= 0)
-            {
-                
-            }
-
-            damageTimer = damageCooldown;
+            
         }
     }
 }

@@ -15,14 +15,13 @@ public class enemigo : Character
     private float cronometroAtaque;
     private bool atacando;
     public float damage = 2.0f;
-     public float damageArma = 10;  
+    public float damageArma = 10;  
     public int damageFrame = 10; // Change this to the frame you want.
 
     protected override void Awake() {
         maxLife = 15f;
         healthSlider.value = life;
         contactDamage = 2f;
-        damageCooldown = 0f;
         base.Awake();
         anim = GetComponent<Animator>();
         target = GameObject.Find("Personaje principal").transform;

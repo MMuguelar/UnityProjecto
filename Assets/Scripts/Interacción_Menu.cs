@@ -10,4 +10,13 @@ public class Interacción_Menu : MonoBehaviour
     public void iniciar() {
         SceneManager.LoadScene(numeroEscena);
     }
+
+    public void ExitGame()
+    {
+        #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+        #else
+            Application.Quit();
+        #endif
+    }
 }
