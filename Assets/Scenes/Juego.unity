@@ -834,7 +834,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3446111143251177823, guid: 2480a595d4837c74894abcbfc54b78a3, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: Jefe
       objectReference: {fileID: 0}
     - target: {fileID: 4398671181576060048, guid: 2480a595d4837c74894abcbfc54b78a3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -903,6 +903,18 @@ PrefabInstance:
     - target: {fileID: 5172360372979751537, guid: 2480a595d4837c74894abcbfc54b78a3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 3.5522068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5718391942632371297, guid: 2480a595d4837c74894abcbfc54b78a3, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5718391942632371297, guid: 2480a595d4837c74894abcbfc54b78a3, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5718391942632371297, guid: 2480a595d4837c74894abcbfc54b78a3, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6452571887381351389, guid: 2480a595d4837c74894abcbfc54b78a3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
