@@ -23,7 +23,7 @@ public class OpenMenu : MonoBehaviour
     }
 
     public void UnloadPauseMenu()
-    {
+     {
         SceneManager.UnloadSceneAsync(pauseMenuSceneName);
     }*/
 }

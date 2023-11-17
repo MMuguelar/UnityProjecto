@@ -137,7 +137,7 @@ public void ApplyDamage(enemigo enemy)
     {
         // Aplicar daño al enemigo
         enemy.TakeDamage(BateDamage);
-
+        
         // Restablecer la bandera de golpe una vez que el daño se haya aplicado
         isPunching = false;
     }
