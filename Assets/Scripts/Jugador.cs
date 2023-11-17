@@ -24,7 +24,7 @@ public class Jugador : Character
         base.Update();
         Debug.Log(life);
         healTimer += Time.deltaTime;
-        Debug.Log("HealTimer: " + healTimer);
+        //Debug.Log("HealTimer: " + healTimer);
         if(life <= 0){
             muerto = true;
             ControladorMuerte.Instance.CheckBool(muerto);

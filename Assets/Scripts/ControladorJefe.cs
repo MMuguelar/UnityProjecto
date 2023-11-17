@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ControladorJefe : MonoBehaviour
 {
@@ -15,15 +16,15 @@ public class ControladorJefe : MonoBehaviour
         }else{
             Destroy(gameObject);
         }
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        condicional = false;
     }
 
     public void CheckBool(bool newBool)
     {
-        if (newBool == true)
-        {
-            condicional = true;
-        }else{
-            condicional = false;
-        }
+        condicional = newBool;
     }
 }

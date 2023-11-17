@@ -7,9 +7,11 @@ public class enemigo : Character
     private bool canTakeDamage = false;
     public float distanciaDePersecucion = 20.0f;
     public float distanciaDeAtaque = 8.0f;
+    private bool muerto;    
     public float tiempoEntreAtaques = 2.0f;
     public float velocidad = 1.0f;
     private Character player;
+    private enemigo jefe;
     private Animator anim;
     public Transform target;
     private float cronometroAtaque;
@@ -22,83 +24,82 @@ public class enemigo : Character
         maxLife = 10f;
         healthSlider.value = life;
         contactDamage = 2f;
+        muerto = false;
         base.Awake();
         anim = GetComponent<Animator>();
         target = GameObject.Find("Personaje principal").transform;
         player = GameObject.Find("Personaje principal").GetComponent<Character>();
+        jefe   = GameObject.Find("Boar_Man Variant").GetComponent<enemigo>();
     }
 
     protected override void Update()
     {
         ComportamientoEnemigo();
-            muerto();
         base.Update();
-    }
-    void muerto()
-    {
-        if(life <= 0)
-            {
-                Destroy(gameObject);
-            }
     }
 
    void ComportamientoEnemigo()
-{
-    anim.SetBool("run", false);
-    float distanciaAlObjetivo = Vector3.Distance(transform.position, target.position);
-
-    // Check if the player is within the pursuit distance.
-    if (distanciaAlObjetivo <= distanciaDePersecucion)
     {
-        RotarHaciaObjetivo();
-        anim.SetBool("walk", false);
         anim.SetBool("run", false);
+        float distanciaAlObjetivo = Vector3.Distance(transform.position, target.position);
 
-        // Check if the player is within the attack range.
-        if (distanciaAlObjetivo <= distanciaDeAtaque)
+        // Check if the player is within the pursuit distance.
+        if (distanciaAlObjetivo <= distanciaDePersecucion)
         {
             RotarHaciaObjetivo();
             anim.SetBool("walk", false);
             anim.SetBool("run", false);
-            anim.SetBool("attack", true);
 
-            // Check if we are at the specified damage frame.
-            if (!atacando)
+            // Check if the player is within the attack range.
+            if (distanciaAlObjetivo <= distanciaDeAtaque)
             {
-                DealDamage(); // Call a method to apply damage to the player.
-                //Debug.Log("empuje");
-            }
+                RotarHaciaObjetivo();
+                anim.SetBool("walk", false);
+                anim.SetBool("run", false);
+                anim.SetBool("attack", true);
 
-            // Check if enough time has passed to allow another attack.
-            if (cronometroAtaque >= tiempoEntreAtaques)
-            {
-                cronometroAtaque = 0;
-                atacando = true; // Set atacando to true for continuous attacks.
-                  //Debug.Log("real");
+                // Check if we are at the specified damage frame.
+                if (!atacando)
+                {
+                    DealDamage(); // Call a method to apply damage to the player.
+                    //Debug.Log("empuje");
+                }
+
+                // Check if enough time has passed to allow another attack.
+                if (cronometroAtaque >= tiempoEntreAtaques)
+                {
+                    cronometroAtaque = 0;
+                    atacando = true; // Set atacando to true for continuous attacks.
+                    //Debug.Log("real");
+                }
+                else
+                {
+                    cronometroAtaque += Time.deltaTime;
+                    atacando = false; // Set atacando to false if the attack cooldown is not complete.
+                    //Debug.Log("falso");
+                }
             }
             else
             {
-                cronometroAtaque += Time.deltaTime;
-                atacando = false; // Set atacando to false if the attack cooldown is not complete.
-                //Debug.Log("falso");
+                anim.SetBool("attack", false);
+                atacando = false;
+
+                anim.SetBool("run", true);
+                velocidad = 6.0f;
+                transform.Translate(Vector3.forward * velocidad * 2 * Time.deltaTime);
             }
-        }
-        else
-        {
-            anim.SetBool("attack", false);
-            atacando = false;
+            if(life <= 0 && gameObject.CompareTag("Enemy")){
+                Destroy(gameObject);
+            }
+            if(jefe.life <= 0){
+                Debug.Log("Mori jefe");
+                muerto = true;
+                ControladorJefe.Instance.CheckBool(muerto);
+                //gameObject.SetActive(false);
+            }
 
-            anim.SetBool("run", true);
-            velocidad = 6.0f;
-            transform.Translate(Vector3.forward * velocidad * 2 * Time.deltaTime);
-        }
-        if(life <= 0){
-            Destroy(gameObject);
-            ControladorJefe.Instance.CheckBool(true);
-        }
-
+        }   
     }
-}
 
 
 
@@ -138,7 +139,7 @@ public class enemigo : Character
 
     }
 
-    protected override void OnCollisionEnter(Collision collision)
+    /*protected override void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("arma") && canTakeDamage)
         {
@@ -147,10 +148,11 @@ public class enemigo : Character
             {
                 // El objeto ha quedado sin vida, puedes realizar acciones adicionales aquí
                 // Por ejemplo, destruir el objeto o reproducir una animación de muerte.
-                Destroy(gameObject);
+               if()
+                
             }
         }
-    }
+    }*/
 
     private void OnMouseDown()
     {

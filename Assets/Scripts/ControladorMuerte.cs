@@ -21,17 +21,11 @@ public class ControladorMuerte : MonoBehaviour
     }
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        // Reset the boolean to false whenever a new scene is loaded
         condicional = false;
     }
     public void CheckBool(bool newBool)
     {
         condicional = newBool;
-        /*if (newBool == true)
-        {
-            condicional = true;
-        }else{
-            condicional = false;
-        }*/
+
     }
 }

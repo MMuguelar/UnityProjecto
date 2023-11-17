@@ -574,7 +574,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 15902e568099bac4ab0e5d4227ed41bb, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: Jefe
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -640,13 +640,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7fa6125734492548a2562d57b1bef70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  contactDamage: 0
+  life: 0
   healthSlider: {fileID: 9087799466864941761}
   distanciaDePersecucion: 20
   distanciaDeAtaque: 8
   tiempoEntreAtaques: 2
   velocidad: 1
   target: {fileID: 0}
+  damage: 2
+  damageArma: 10
+  damageFrame: 10
 --- !u!136 &8922344548606654105
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -687,7 +690,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 924862307f2a042499b5304cf4082a64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  contactDamage: 200
+  life: 0
   healthSlider: {fileID: 0}
   capaDelJugador:
     serializedVersion: 2

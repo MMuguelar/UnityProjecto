@@ -13,7 +13,7 @@ public class Bate : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("Enemy") ||  collision.gameObject.CompareTag("Jefe"))
         {
             enemigo enemy = collision.gameObject.GetComponent<enemigo>();
 
