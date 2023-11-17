@@ -31,8 +31,15 @@ public class enemigo : Character
     protected override void Update()
     {
         ComportamientoEnemigo();
-      
+            muerto();
         base.Update();
+    }
+    void muerto()
+    {
+        if(life <= 0)
+            {
+                Destroy(gameObject);
+            }
     }
 
    void ComportamientoEnemigo()
