@@ -1,0 +1,267 @@
+{
+  "main": {
+    "id": "857d2d97986d34e5",
+    "type": "split",
+    "children": [
+      {
+        "id": "a14ba7bba867f296",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "77ed00aae0fb8729",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "4359c3e72ab43d30",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Login.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "117cdc4770828da3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Api.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9b69891e09d921a3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Util.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1573c166113429bb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Devices.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "78781ce44f0c91c7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Wallet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d8c0ef5af11a763a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Clusters.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a04862b2a29b1f1f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Api.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "834af8b54846ca0c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Documentacion SDK.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4033f3db51a690d0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Documentacion SDK.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 9
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "bb7db24060e60fa1",
+    "type": "split",
+    "children": [
+      {
+        "id": "d15fd75ff318037b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5e01e01b0794a754",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "8d47bb71c3ccdabb",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "27026d8cf2c9fe72",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "932a9fd819137348",
+    "type": "split",
+    "children": [
+      {
+        "id": "7a199c57d1f338ab",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a3db7d54cb479087",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Documentacion SDK.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "c4fe1512ba12aa69",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Documentacion SDK.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "22b29890b9113952",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "05495cb9974058e9",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Documentacion SDK.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "4033f3db51a690d0",
+  "lastOpenFiles": [
+    "Clusters.md",
+    "Documentacion SDK.md",
+    "LocationManager.md",
+    "Wallet.md",
+    "Login.md",
+    "[.md",
+    "Devices.md",
+    "Api.md",
+    "Nodos.md",
+    "Util.md"
+  ]
+}

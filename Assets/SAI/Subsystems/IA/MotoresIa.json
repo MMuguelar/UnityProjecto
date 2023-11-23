@@ -1,0 +1,40 @@
+{
+  "motores_de_IA": [
+    {
+      "nombre": "GPT-3",
+      "access": "limited"
+    },
+    {
+      "nombre": "BERT",
+      "access": "free"
+    },
+    {
+      "nombre": "AlexNet",
+      "access": "free"
+    },
+    {
+      "nombre": "Siri",
+      "access": "limited"
+    },
+    {
+      "nombre": "Watson",
+      "access": "limited"
+    },
+    {
+      "nombre": "Cortana",
+      "access": "free"
+    },
+    {
+      "nombre": "Einstein",
+      "access": "free"
+    },
+    {
+      "nombre": "TensorFlow",
+      "access": "limited"
+    },
+    {
+      "nombre": "PyTorch",
+      "access": "limited"
+    }
+  ]
+}

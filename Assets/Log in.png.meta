@@ -1,0 +1,764 @@
+fileFormatVersion: 2
+guid: 7edc6e017e76dfa4593af233b8a0b134
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Log in_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1590
+        width: 727
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbd56a917e548ef459058c41b1311d2f
+      internalID: -1207133876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Log in_1
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 1590
+        width: 727
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 132d7ad67cda7bf42bdb899c846dbc72
+      internalID: -964884216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Log in_2
+      rect:
+        serializedVersion: 2
+        x: 1454
+        y: 1590
+        width: 727
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1dd0798252bb294298b42aac3adf5d1
+      internalID: -939205851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Log in_3
+      rect:
+        serializedVersion: 2
+        x: 2181
+        y: 1590
+        width: 727
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 543d98ab26463c14f8b9343fa8a32fb8
+      internalID: 1544299234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Log in_4
+      rect:
+        serializedVersion: 2
+        x: 2908
+        y: 1590
+        width: 727
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8ed523b668419249a79410d9634fbdb
+      internalID: -1458402139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Log in_5
+      rect:
+        serializedVersion: 2
+        x: 3635
+        y: 1590
+        width: 727
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5daa7d1b61dac8b4cbdd10d455aa86e2
+      internalID: -243131730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Log in_6
+      rect:
+        serializedVersion: 2
+        x: 4362
+        y: 1590
+        width: 727
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99441b76c33d68044a16e3ba22bceff2
+      internalID: -1211130193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Log in_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1325
+        width: 727
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c09b924b150b76b4dac2de50bd644045
+      internalID: -1174533201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Log in_8
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 1325
+        width: 727
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2664f7b9de7f164390e6b93ff48c1f6
+      internalID: 1993754514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Log in_9
+      rect:
+        serializedVersion: 2
+        x: 1454
+        y: 1325
+        width: 727
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 785072ca717401b4c80dc4cffd9a2ebf
+      internalID: 1873359823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Log in_10
+      rect:
+        serializedVersion: 2
+        x: 2181
+        y: 1325
+        width: 727
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1540953f06339841b73737466922943
+      internalID: -1045202209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Log in_11
+      rect:
+        serializedVersion: 2
+        x: 2908
+        y: 1325
+        width: 727
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ac64aa3fb0b53344b200c98bf91ba52
+      internalID: -1730150171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Log in_12
+      rect:
+        serializedVersion: 2
+        x: 3635
+        y: 1325
+        width: 727
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a1d6b60eb841d34cae5de0b091a3dbc
+      internalID: 621863580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Log in_13
+      rect:
+        serializedVersion: 2
+        x: 4362
+        y: 1325
+        width: 727
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c223a0edac71e1f4287ec6aed9f3b3e4
+      internalID: -1859086255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Log in_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1060
+        width: 727
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7932cb028ec48b240ab6ac927b329ca6
+      internalID: -73821396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Log in_15
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 1060
+        width: 727
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffb5775ecd0de2b4baee0488531f0b49
+      internalID: -436901859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Log in_16
+      rect:
+        serializedVersion: 2
+        x: 1454
+        y: 1060
+        width: 727
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15f0c9d1b02997a48b2ee20eb062fbd6
+      internalID: -1730196251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Log in_17
+      rect:
+        serializedVersion: 2
+        x: 2181
+        y: 1060
+        width: 727
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d7bf3dc65752fb438330d64c254d881
+      internalID: -896577671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Log in_18
+      rect:
+        serializedVersion: 2
+        x: 2908
+        y: 1060
+        width: 727
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ba9f3c2c77cedf479d15c7973ae2e85
+      internalID: 527059025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Log in_19
+      rect:
+        serializedVersion: 2
+        x: 3635
+        y: 1060
+        width: 727
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33e40fe65258ba54781548c60ea8be0f
+      internalID: 1772440265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Log in_20
+      rect:
+        serializedVersion: 2
+        x: 4362
+        y: 1060
+        width: 727
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46962775582571848accb687bf8a5cf4
+      internalID: 2011675530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Log in_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 795
+        width: 727
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fabb2bd20857ec4d870063f5ce5d595
+      internalID: 1181369821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Log in_22
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 795
+        width: 727
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 870a3891eb9ef4f4d8a15b9ccb6d3a4f
+      internalID: -1376342853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Log in_23
+      rect:
+        serializedVersion: 2
+        x: 1454
+        y: 795
+        width: 727
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2db9984e4171aa04a8f65f72a4be90e2
+      internalID: -307690122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Log in_24
+      rect:
+        serializedVersion: 2
+        x: 2181
+        y: 795
+        width: 727
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64d39c31deef37144a954514d1331728
+      internalID: 532508762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Log in_25
+      rect:
+        serializedVersion: 2
+        x: 2908
+        y: 795
+        width: 727
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b39550c491c3b6443ac00bc5e790225d
+      internalID: 2015519191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Log in_26
+      rect:
+        serializedVersion: 2
+        x: 3635
+        y: 795
+        width: 727
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b62b62bd6cdd724b92b1426a4af6cf5
+      internalID: 725397736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Log in_27
+      rect:
+        serializedVersion: 2
+        x: 4362
+        y: 795
+        width: 727
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 830e249170d454a4290e94d82dfd70ee
+      internalID: 204120863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Log in_0: -1207133876
+      Log in_1: -964884216
+      Log in_10: -1045202209
+      Log in_11: -1730150171
+      Log in_12: 621863580
+      Log in_13: -1859086255
+      Log in_14: -73821396
+      Log in_15: -436901859
+      Log in_16: -1730196251
+      Log in_17: -896577671
+      Log in_18: 527059025
+      Log in_19: 1772440265
+      Log in_2: -939205851
+      Log in_20: 2011675530
+      Log in_21: 1181369821
+      Log in_22: -1376342853
+      Log in_23: -307690122
+      Log in_24: 532508762
+      Log in_25: 2015519191
+      Log in_26: 725397736
+      Log in_27: 204120863
+      Log in_28: -1866008571
+      Log in_29: -851032270
+      Log in_3: 1544299234
+      Log in_30: 1975342644
+      Log in_31: -1225260283
+      Log in_32: 2030104733
+      Log in_33: 273865080
+      Log in_34: -1096006694
+      Log in_35: 882260705
+      Log in_36: 1056468442
+      Log in_37: -1396620907
+      Log in_38: 735048507
+      Log in_39: 1939792536
+      Log in_4: -1458402139
+      Log in_40: 1375792863
+      Log in_41: 1184793716
+      Log in_42: 541675186
+      Log in_43: 598518474
+      Log in_44: 1411294222
+      Log in_45: 629540710
+      Log in_46: -670869062
+      Log in_47: 1841285774
+      Log in_48: -1487022634
+      Log in_5: -243131730
+      Log in_6: -1211130193
+      Log in_7: -1174533201
+      Log in_8: 1993754514
+      Log in_9: 1873359823
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

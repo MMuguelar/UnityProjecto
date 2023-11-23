@@ -1,0 +1,57 @@
+[
+    {
+        "code": "AA",
+        "name": "Work",
+        "description": "For work-related tasks"
+    },
+    {
+        "code": "BB",
+        "name": "Personal",
+        "description": "For personal use"
+    },
+    {
+        "code": "CC",
+        "name": "Study",
+        "description": "For educational purposes"
+    },
+    {
+        "code": "DD",
+        "name": "Family",
+        "description": "For family-related activities"
+    },
+    {
+        "code": "EE",
+        "name": "Hobbies",
+        "description": "For hobbies and interests"
+    },
+    {
+        "code": "FF",
+        "name": "Health",
+        "description": "For health-related information"
+    },
+    {
+        "code": "GG",
+        "name": "Travel",
+        "description": "For travel experiences"
+    },
+    {
+        "code": "HH",
+        "name": "Entertainment",
+        "description": "For entertainment activities"
+    },
+    {
+        "code": "II",
+        "name": "Finance",
+        "description": "For financial matters"
+    },
+    {
+        "code": "JJ",
+        "name": "Shopping",
+        "description": "For shopping lists"
+    },
+    {
+        "code": "KK",
+        "name": "Social",
+        "description": "For social events and gatherings"
+    }
+]
