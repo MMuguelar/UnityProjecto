@@ -14,6 +14,7 @@ namespace SAISDK
     public static class LoginSys 
     {
         public static string SessionKey;
+        public static string crsfToken;
         public static IEnumerator Login(string email, string password, Action<bool> callback)
         {
             Debug.Log("Loggin In");
@@ -36,12 +37,13 @@ namespace SAISDK
 
                     // Extraemos la SessionKey del Usuario
                     JSONNode responseJson = JSON.Parse(www.downloadHandler.text);
-                    SessionKey = responseJson["session_key"];                    
+                    SessionKey = responseJson["session_key"];
+                    crsfToken = responseJson["csrftoken"];
                     PlayerPrefs.SetString("sessionKey", SessionKey);
                     PlayerPrefs.SetString("csrfToken", responseJson["csrftoken"]);
 
                     // La solicitud fue exitosa
-                    callback(true); // Llama al callback con 'true' para indicar éxito.
+                    callback(true); // Llama al callback con 'true' para indicar Ã©xito.
                 }
             }
         }
@@ -68,13 +70,42 @@ namespace SAISDK
                 else
                 {    
                     // La solicitud fue exitosa
-                    callback(true); // Llama al callback con 'true' para indicar éxito.
+                    callback(true); // Llama al callback con 'true' para indicar Ã©xito.
                 }
             }
 
         }
 
+        public static IEnumerator Logout(Action<bool> callback)
+        {
+            string url = ApiRoutes.Logout;
+
+            WWWForm form = new WWWForm();
+
+            using (UnityWebRequest www = UnityWebRequest.Post(url, form))
+            {
+                www.SetRequestHeader("Content-Type", "application/json");
+                www.SetRequestHeader("Authorization", "Bearer " + crsfToken);
+                www.SetRequestHeader("X-CSRFToken", crsfToken);
+                www.SetRequestHeader("csrftoken", crsfToken);
+                www.SetRequestHeader("spaceaisess", SessionKey);
+
+                yield return www.SendWebRequest();
+
+                if (www.result != UnityWebRequest.Result.Success)
+                {
+                    Debug.Log("Logout Failed : " + www.error);
+                    callback(false);
+                    
+                }
+                else
+                {
+                    Debug.Log("Logout OK : " + www.downloadHandler.text);
+                    callback(true);
+                }
+            }
+        }
+
 
     }
 }
-

@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/menu.unity
+    path: Assets/Scenes/Menu.unity
     guid: 470713c94f36e9049ad8fde9f9579b05
   - enabled: 1
     path: Assets/Scenes/Juego.unity
@@ -15,9 +15,15 @@ EditorBuildSettings:
     path: Assets/Scenes/PuzzleDash.unity
     guid: b3be96deb824c644da619e4de8494281
   - enabled: 1
-    path: Assets/Scenes/muerte.unity
+    path: Assets/Scenes/Muerte.unity
     guid: 2f59cbc9deabad843bb4d53dd666e021
   - enabled: 1
-    path: Assets/Scenes/victoria.unity
+    path: Assets/Scenes/Victoria.unity
     guid: 4fa9969fca847c2499535d31066cfd28
+  - enabled: 1
+    path: Assets/Scenes/LogIn.unity
+    guid: 1bbba17d1ecc28b4bb30cb7f83ab2c55
+  - enabled: 1
+    path: Assets/Scenes/Register.unity
+    guid: 023f2e1f883ee8e428543e329e479e11
   m_configObjects: {}

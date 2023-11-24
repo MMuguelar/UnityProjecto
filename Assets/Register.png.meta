@@ -1,0 +1,764 @@
+fileFormatVersion: 2
+guid: 630ae9d8164cdf94d80a0f4d96e2cce8
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Register_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1458
+        width: 800
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64a32f5419546354c9836fbe2137eae4
+      internalID: -1493279791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Register_1
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1458
+        width: 800
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76d55eeed863628428f3d452bf6601b9
+      internalID: -1229791753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Register_2
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1458
+        width: 800
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e91550617dcdfe40b45d9fbee3edeae
+      internalID: 1850448231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Register_3
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1458
+        width: 800
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5f0c1efda9af16469bfd87221a03cde
+      internalID: 466528717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Register_4
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 1458
+        width: 800
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f5be530b2c6f8642abe79dfb51c7bb5
+      internalID: 2013785944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Register_5
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 1458
+        width: 800
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b606622e695f4d04898c2d7e80c01715
+      internalID: 1497180561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Register_6
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 1458
+        width: 800
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e83baf0e761ffee47b4a56a66cab5952
+      internalID: -970956060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Register_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1215
+        width: 800
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6a9f780a16940a4a8f9aae6acf0a0f2
+      internalID: 1960987550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Register_8
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1215
+        width: 800
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a295c4f3b261b4469d7b924a663dd96
+      internalID: -692953793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Register_9
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1215
+        width: 800
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aff5c0873b0c9a4594e6b936e599c53
+      internalID: -1050481145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Register_10
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1215
+        width: 800
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fe10c0c948bbaa4596b3339b59349ac
+      internalID: 180218653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Register_11
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 1215
+        width: 800
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caafe7766624fc3448e52b09d1bbc566
+      internalID: 372878723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Register_12
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 1215
+        width: 800
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4ef305d3e1297c4cbcb72e5bdac0f33
+      internalID: -484351470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Register_13
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 1215
+        width: 800
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed5aa973d022ce64283f4c417f7ec667
+      internalID: 2060630558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Register_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 972
+        width: 800
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c4cdb7adf58b504e8a0935fd65494ab
+      internalID: -1021067566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Register_15
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 972
+        width: 800
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 777630b59b8ea1340b1a37f3ae1de89f
+      internalID: 455627544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Register_16
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 972
+        width: 800
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 703e1ef22d7765d46af7517b4ed8cffe
+      internalID: 827160915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Register_17
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 972
+        width: 800
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78cc95d4d71db3c4dbf3800e58d90e13
+      internalID: 416053298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Register_18
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 972
+        width: 800
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac9f351f07d00fc4d9e90ef3bde48beb
+      internalID: 613268336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Register_19
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 972
+        width: 800
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3de0fc8adad4f4a478e1eda420935409
+      internalID: -555582765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Register_20
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 972
+        width: 800
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddef4dd3509e7c04aa35c19f073b15bf
+      internalID: -1202846050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Register_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 729
+        width: 800
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 895af01a74e480044bf69501be4ba0da
+      internalID: 2068857456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Register_22
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 729
+        width: 800
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94c0ff42fd663794ca4a7ba3ee26624f
+      internalID: -1639075048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Register_23
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 729
+        width: 800
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26aad37a7e902824aa8e807bdcb73e7b
+      internalID: -988143750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Register_24
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 729
+        width: 800
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6707ee8250d408c488ffda607ef392ae
+      internalID: -404368084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Register_25
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 729
+        width: 800
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf92e219a1ef29740b806ea36a63437f
+      internalID: 641108016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Register_26
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 729
+        width: 800
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d54ec45f9f54d7c469fe8ff2772145ce
+      internalID: -1411499991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Register_27
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 729
+        width: 800
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b364e0c0e0ff464459c7823de8619c3a
+      internalID: -234711290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 0726e1f4e3400de49aa31f7de6272545
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Register_0: -1493279791
+      Register_1: -1229791753
+      Register_10: 180218653
+      Register_11: 372878723
+      Register_12: -484351470
+      Register_13: 2060630558
+      Register_14: -1021067566
+      Register_15: 455627544
+      Register_16: 827160915
+      Register_17: 416053298
+      Register_18: 613268336
+      Register_19: -555582765
+      Register_2: 1850448231
+      Register_20: -1202846050
+      Register_21: 2068857456
+      Register_22: -1639075048
+      Register_23: -988143750
+      Register_24: -404368084
+      Register_25: 641108016
+      Register_26: -1411499991
+      Register_27: -234711290
+      Register_28: 537550599
+      Register_29: -913264564
+      Register_3: 466528717
+      Register_30: -2085207655
+      Register_31: 1435426471
+      Register_32: 1170823100
+      Register_33: -1493153982
+      Register_34: -1899255885
+      Register_35: -803475843
+      Register_36: 2080066655
+      Register_37: 1471427071
+      Register_38: 565988504
+      Register_39: 1214462014
+      Register_4: 2013785944
+      Register_40: -312875000
+      Register_41: -1258859015
+      Register_42: -1632771512
+      Register_43: -1505540741
+      Register_44: -1093348029
+      Register_45: 1700735798
+      Register_46: 733252422
+      Register_47: -81250964
+      Register_48: -198047682
+      Register_5: 1497180561
+      Register_6: -970956060
+      Register_7: 1960987550
+      Register_8: -692953793
+      Register_9: -1050481145
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

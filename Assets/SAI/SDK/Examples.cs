@@ -9,7 +9,8 @@ public class Examples : MonoBehaviour
 
     private void Start()
     {      
-        //ExampleLogin("spaceai@spaceai.com", "spaceai");
+        SAI.SDK.Login.SignUp("email","username","telefono","","");
+        //ExampleLogin("spaceai@spaceai.com", "spaceai"); clave obligatoria por ahora NewPassword2547
         
         //ExampleRegistration("TestingSDK@spaceai.com", "TestingSDK", "3489323274");
     }
@@ -19,7 +20,7 @@ public class Examples : MonoBehaviour
         StartCoroutine(LoginSys.Login(email, password, LoginCallback));
     }
 
- 
+    
 
     public void ExampleRegistration(string email,string username,string phone,string city ="",string placeID ="")
     {
