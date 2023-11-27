@@ -132,6 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4407854}
+  - component: {fileID: 4407855}
   m_Layer: 0
   m_Name: PasswordManager
   m_TagString: Untagged
@@ -154,6 +155,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4407855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4407853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0e502d602fd088419a6e1fa7a823f79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  userPassword: {fileID: 323189004}
+  repeatUserPassword: {fileID: 1792480943}
 --- !u!1 &99904535
 GameObject:
   m_ObjectHideFlags: 0
@@ -1242,7 +1257,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 466569411}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4407855}
+        m_TargetAssemblyTypeName: ShowPassword, Assembly-CSharp
+        m_MethodName: ShowUserRepeatPassword
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &466569411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3052,7 +3079,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -58.167603}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -662.3542, y: -161.9391}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1328098268
@@ -3176,7 +3203,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1371026345}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4407855}
+        m_TargetAssemblyTypeName: ShowPassword, Assembly-CSharp
+        m_MethodName: ShowUserPassword
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1371026345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4250,7 +4289,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bfe0f78053a1664cbb47a9e08ec5751, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numeroEscena: 5
+  submitButton: {fileID: 2079971051}
   inputEmail: {fileID: 717598720}
   inputUserName: {fileID: 1120066269}
   inputPassword: {fileID: 323189004}

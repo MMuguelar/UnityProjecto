@@ -9,7 +9,6 @@ using SAISDK;
 
 public class Login : MonoBehaviour
 {
-    public int numeroEscena;
     public TMP_InputField inputUserName;
     public TMP_InputField inputPassword;
 
@@ -27,7 +26,7 @@ public class Login : MonoBehaviour
     }
 
     public void Register() {
-        SceneManager.LoadScene(numeroEscena);
+        SceneManager.LoadScene(6);
     }
 
 

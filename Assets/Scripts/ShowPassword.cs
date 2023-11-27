@@ -6,6 +6,8 @@ using System;
 public class ShowPassword : MonoBehaviour
 {
     [SerializeField] private TMP_InputField userPassword;
+    [SerializeField] private TMP_InputField repeatUserPassword;
+
  
     public void ShowUserPassword()
     {
@@ -18,5 +20,17 @@ public class ShowPassword : MonoBehaviour
             userPassword.contentType = TMP_InputField.ContentType.Password;
         }
         userPassword.ForceLabelUpdate();
+    }
+        public void ShowUserRepeatPassword()
+    {
+        if (repeatUserPassword.contentType == TMP_InputField.ContentType.Password)
+        {
+            repeatUserPassword.contentType = TMP_InputField.ContentType.Standard;
+        }
+        else
+        {
+            repeatUserPassword.contentType = TMP_InputField.ContentType.Password;
+        }
+        repeatUserPassword.ForceLabelUpdate();
     }
 }

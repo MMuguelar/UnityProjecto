@@ -1,78 +1,51 @@
-using System.Security.Cryptography;
-using System;
 using UnityEngine;
-using System.Collections;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
+using System.Collections.Generic;
+using System.Text.RegularExpressions;
 using SAISDK;
 
 public class Register : MonoBehaviour
 {
-    public int numeroEscena;
+    public Button submitButton;
     public TMP_InputField inputEmail;
     public TMP_InputField inputUserName;
     public TMP_InputField inputPassword;
     public TMP_InputField inputRepeatPassword;
+    private List<TMP_InputField> inputFields = new List<TMP_InputField>();
 
     // Start is called before the first frame update
     void Start()
     {
-        //SAI.SDK.Login.SignOut();
         inputPassword.contentType = TMP_InputField.ContentType.Password;
-        //SAI.SDK.Login.SignUp("campo@s.com","pedro","+541168983444", "cs", "p");
+        inputRepeatPassword.contentType = TMP_InputField.ContentType.Password;
+
+        inputFields.Add(inputEmail);
+        inputFields.Add(inputUserName);
+        inputFields.Add(inputPassword);
+        inputFields.Add(inputRepeatPassword);
+        if (submitButton != null)
+        {
+            submitButton.interactable = false;
+        }
     }
     // Update is called once per frame
     private void Update() {
-        print("username: " +inputUserName.text);
-        print("Password: " +inputPassword.text);
-    }
 
-    public void LogOut() {
-        ExampleLogOut();
+        ValidateInput();  
     }
-
 
     public void submit()
     {
-        //ExampleRegistration(inputUserName.text, inputPassword.text);
-    }
-    
-    private void ExampleLogin(string email,string password)
-    {
-        StartCoroutine(LoginSys.Login(email, password, LoginCallback));
-    }
 
-    private void ExampleLogOut(){
-        StartCoroutine(LoginSys.Logout(LogoutCallBack));
-    }
-    private void LogoutCallBack(bool response){
-
-        print("Logout Callback response : " + response);
-
-        if(response)
-        {
-            print("Logout OK");
-        }
-        else
-        {
-            print("Logout Bad");
-        }
-    }
-    private void LoginCallback(bool response)
-    {
-        print("Login Callback response : " + response);
-
-        if(response)
-        {
-            print("Login OK");
-        }
-        else
-        {
-            print("Login Bad");
+       // if(inputUserName != "" || )
+        if (inputPassword.text == inputRepeatPassword.text){
+            ExampleRegistration(inputEmail.text, inputUserName.text);
         }
     }
 
-    public void ExampleRegistration(string email,string username,string phone,string city ="",string placeID ="")
+    public void ExampleRegistration(string email,string username,string phone = "",string city ="",string placeID ="")
     {
         StartCoroutine(LoginSys.Register(email, username, phone, RegistrationCallback,city,placeID));
     }
@@ -83,7 +56,7 @@ public class Register : MonoBehaviour
 
         if (response)
         {
-            print("Registration OK");
+            SceneManager.LoadScene(5);
         }
         else
         {
@@ -91,5 +64,40 @@ public class Register : MonoBehaviour
         }
     }
 
+    public void ValidateInput()
+    {
+        
+       bool inputsValid = true;
 
+        foreach (TMP_InputField inputField in inputFields)
+        {
+            if (inputField == inputEmail)
+            {
+                // Validate email using regex pattern
+                if (inputField != null && string.IsNullOrWhiteSpace(inputField.text) || !IsEmailValid(inputField.text))
+                {
+                    print("invalid email");
+                    inputsValid = false;
+                    break; // Exit the loop early if email is invalid
+                }
+            }
+            else if (inputField != null && string.IsNullOrWhiteSpace(inputField.text))
+            {
+                print("complete " + inputField + " field");
+                inputsValid = false;
+                break; // Exit the loop early if any input is invalid
+            }
+        }
+
+        submitButton.interactable = inputsValid;
+    }
+
+    private bool IsEmailValid(string email)
+    {
+        // Regex pattern to validate email addresses
+        string pattern = @"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,})+)$";
+
+        Regex regex = new Regex(pattern);
+        return regex.IsMatch(email);
+    }
 }
