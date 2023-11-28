@@ -1,9 +1,12 @@
 using UnityEngine;
+using UnityEditor;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
+using System;
+using System.Linq;
 using SAISDK;
 
 public class Register : MonoBehaviour
@@ -38,16 +41,17 @@ public class Register : MonoBehaviour
 
     public void submit()
     {
-
-       // if(inputUserName != "" || )
         if (inputPassword.text == inputRepeatPassword.text){
-            ExampleRegistration(inputEmail.text, inputUserName.text);
+            ExampleRegistration(inputEmail.text, inputUserName.text, inputPassword.text);
+        }else{
+            EditorUtility.DisplayDialog("Password:",
+            "The passwords don't match.", "Ok");
         }
     }
 
-    public void ExampleRegistration(string email,string username,string phone = "",string city ="",string placeID ="")
+    public void ExampleRegistration(string email,string username,string password, string phone = "+541168684882",string city ="",string placeID ="")
     {
-        StartCoroutine(LoginSys.Register(email, username, phone, RegistrationCallback,city,placeID));
+        StartCoroutine(LoginSys.Register(email, username, password, phone, RegistrationCallback,city,placeID));
     }
 
     private void RegistrationCallback(bool response)
@@ -71,27 +75,37 @@ public class Register : MonoBehaviour
 
         foreach (TMP_InputField inputField in inputFields)
         {
-            if (inputField == inputEmail)
+            if (inputField != null && string.IsNullOrWhiteSpace(inputField.text))
             {
-                // Validate email using regex pattern
-                if (inputField != null && string.IsNullOrWhiteSpace(inputField.text) || !IsEmailValid(inputField.text))
-                {
-                    print("invalid email");
+                    print("complete " + inputField + " field");
                     inputsValid = false;
-                    break; // Exit the loop early if email is invalid
+                    break; // Exit the loop early if any input is invalid
+                
+                if (inputField == inputEmail)
+                {
+                    // Validate email using regex pattern
+                    if (inputField != null && string.IsNullOrWhiteSpace(inputField.text) || !IsEmailValid(inputField.text))
+                    {
+                        print("invalid email");
+                        inputsValid = false;
+                        break; // Exit the loop early if email is invalid
+                    }
                 }
-            }
-            else if (inputField != null && string.IsNullOrWhiteSpace(inputField.text))
-            {
-                print("complete " + inputField + " field");
-                inputsValid = false;
-                break; // Exit the loop early if any input is invalid
+                if(inputField== inputPassword || inputField == inputRepeatPassword){
+                    if (inputField != null && string.IsNullOrWhiteSpace(inputField.text) || !IsPasswordValid(inputField.text))
+                    {
+                        print("invalid " + inputField + " field");
+                        break; // Exit the loop early if email is invalid
+                    }
+                }
             }
         }
 
         submitButton.interactable = inputsValid;
     }
-
+    public void LogIn() {
+        SceneManager.LoadScene(0);
+    }
     private bool IsEmailValid(string email)
     {
         // Regex pattern to validate email addresses
@@ -99,5 +113,36 @@ public class Register : MonoBehaviour
 
         Regex regex = new Regex(pattern);
         return regex.IsMatch(email);
+    }
+
+    private bool IsPasswordValid(string password){
+        print(password);
+        string specialCharacters = "!@#$%^&*(),.?\":{}|<>";
+        if ((password.Length < 8)){
+
+            EditorUtility.DisplayDialog("Error:",
+            "The password must be a minimum of 8 characters.", "Ok");
+
+            return false;
+        }if((!password.Any(char.IsUpper)) || (!password.Any(char.IsLower))){
+
+            EditorUtility.DisplayDialog("Error:",
+            "Password must contain both uppercase and lowercase characters.", "Ok");
+
+            return false;
+        }if((password.All(char.IsDigit))){
+
+            EditorUtility.DisplayDialog("Error:",
+            "Password must contain at least one digit.", "Ok");
+
+            return false;
+        }if((!password.Any(c => specialCharacters.Contains(c)))){
+
+            EditorUtility.DisplayDialog("Error:",
+            "Password must contain at least one special character (!@#$%^&*(),.?\":{}|<>)", "Ok");
+
+            return false;
+        }
+        return true;
     }
 }

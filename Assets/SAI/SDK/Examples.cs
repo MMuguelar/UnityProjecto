@@ -22,9 +22,9 @@ public class Examples : MonoBehaviour
 
     
 
-    public void ExampleRegistration(string email,string username,string phone,string city ="",string placeID ="")
+    public void ExampleRegistration(string email,string username,string password,string phone,string city ="",string placeID ="")
     {
-        StartCoroutine(LoginSys.Register(email, username, phone, RegistrationCallback,city,placeID));
+        StartCoroutine(LoginSys.Register(email, username,password, phone, RegistrationCallback,city,placeID));
     }
 
     private void RegistrationCallback(bool response)

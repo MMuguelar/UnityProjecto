@@ -1101,7 +1101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf0111bdb89719c46b5cfbb9a979e555, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numeroEscena: 4
+  numeroEscena: 5
 --- !u!1001 &1882168438
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2364,7 +2364,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d108a0b02c604164496c7c8d14cc09d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numeroEscena: 3
+  numeroEscena: 4
 --- !u!1001 &4397560686245746039
 PrefabInstance:
   m_ObjectHideFlags: 0

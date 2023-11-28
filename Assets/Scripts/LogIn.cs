@@ -9,7 +9,7 @@ using SAISDK;
 
 public class Login : MonoBehaviour
 {
-    public TMP_InputField inputUserName;
+    public TMP_InputField inputEmail;
     public TMP_InputField inputPassword;
 
     // Start is called before the first frame update
@@ -21,7 +21,7 @@ public class Login : MonoBehaviour
     }
     // Update is called once per frame
     private void Update() {
-        print("username: " +inputUserName.text);
+        print("username: " +inputEmail.text);
         print("Password: " +inputPassword.text);
     }
 
@@ -29,10 +29,9 @@ public class Login : MonoBehaviour
         SceneManager.LoadScene(6);
     }
 
-
     public void submit()
     {
-        ExampleLogin(inputUserName.text, inputPassword.text);
+        ExampleLogin(inputEmail.text, inputPassword.text);
     }
 
     private void ExampleLogin(string email,string password)
@@ -40,29 +39,13 @@ public class Login : MonoBehaviour
         StartCoroutine(LoginSys.Login(email, password, LoginCallback));
     }
 
-    private void ExampleLogOut(){
-        StartCoroutine(LoginSys.Logout(LogoutCallBack));
-    }
-    private void LogoutCallBack(bool response){
-
-        print("Logout Callback response : " + response);
-
-        if(response)
-        {
-            print("Logout OK");
-        }
-        else
-        {
-            print("Logout Bad");
-        }
-    }
     private void LoginCallback(bool response)
     {
         print("Login Callback response : " + response);
 
         if(response)
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(1);
         }
         else
         {
@@ -70,24 +53,7 @@ public class Login : MonoBehaviour
         }
     }
 
-    public void ExampleRegistration(string email,string username,string phone,string city ="",string placeID ="")
-    {
-        StartCoroutine(LoginSys.Register(email, username, phone, RegistrationCallback,city,placeID));
+    public void ForgotPassword(){
+        SceneManager.LoadScene(7);
     }
-
-    private void RegistrationCallback(bool response)
-    {
-        print("Registration Callback response : " + response);
-
-        if (response)
-        {
-            print("Registration OK");
-        }
-        else
-        {
-            print("Registration Bad");
-        }
-    }
-
-
 }
